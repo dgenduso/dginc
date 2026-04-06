@@ -1,0 +1,81 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.card {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.card:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle {
+  font-size: clamp(1.05rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.6rem;
+}
+
+.cardBody {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+  max-width: 58ch;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .card {
+    padding: 2rem 2rem 2rem 0;
+    border-top: none;
+    border-left: 1px solid var(--border);
+    padding-left: 2rem;
+  }
+
+  .card:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .card:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,127 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 1.25rem;
+}
+
+.body:last-child {
+  margin-bottom: 0;
+}
+
+.shift {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.shiftFrom {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  color: var(--foreground-muted);
+  text-decoration: line-through;
+  text-decoration-color: #e53e3e;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.shiftTo {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.capabilities {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.capLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.capGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+}
+
+.cap {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.capName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.4rem;
+}
+
+.capDesc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--foreground-muted);
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  .identity,
+  .capabilities {
+    flex: 1;
+  }
+
+  .capabilities {
+    padding-top: 0;
+    border-top: none;
+    border-left: 1px solid var(--border);
+    padding-left: 3rem;
+  }
+}

@@ -1,0 +1,35 @@
+.section {
+  padding: 5rem 1.5rem 3rem;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+
+.subhead {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+  max-width: 58ch;
+}

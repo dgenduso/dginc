@@ -1,0 +1,74 @@
+.section {
+  padding: 5rem 1.5rem 4rem;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.profileImage {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.name {
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.blurb {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+  margin-bottom: 1.25rem;
+  max-width: 52ch;
+}
+
+.linkedin {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: opacity 0.15s ease;
+}
+
+.linkedin:hover {
+  opacity: 0.75;
+}
+
+@media (min-width: 600px) {
+  .inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .profileImage {
+    width: 112px;
+    height: 112px;
+  }
+}

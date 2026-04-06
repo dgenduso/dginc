@@ -1,0 +1,132 @@
+.article {
+  padding: 2.5rem 1.5rem 6rem;
+  background: var(--background);
+}
+
+.content {
+  max-width: 680px;
+  margin: 0 auto;
+
+  /* Base prose */
+  font-size: clamp(1.05rem, 2.5vw, 1.15rem);
+  line-height: 1.8;
+  color: var(--foreground);
+}
+
+/* Headings */
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.content h1 { font-size: clamp(1.5rem, 4vw, 2rem); }
+.content h2 { font-size: clamp(1.3rem, 3.5vw, 1.65rem); }
+.content h3 { font-size: clamp(1.1rem, 3vw, 1.35rem); }
+.content h4 { font-size: 1.1rem; }
+
+/* Paragraphs */
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Links */
+.content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.content a:hover {
+  opacity: 0.8;
+}
+
+/* Lists */
+.content ul,
+.content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+/* Blockquote */
+.content blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  margin: 2rem 0;
+  color: var(--foreground-muted);
+  font-style: italic;
+}
+
+.content blockquote p {
+  margin-bottom: 0;
+}
+
+/* Code */
+.content code {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.88em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+}
+
+.content pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+/* Images */
+.content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* Horizontal rule */
+.content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* First paragraph lead */
+.content > p:first-of-type {
+  font-size: clamp(1.1rem, 2.8vw, 1.25rem);
+  color: var(--foreground);
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .article {
+    padding: 3rem 1.5rem 8rem;
+  }
+}
