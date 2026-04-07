@@ -35,9 +35,9 @@ export default function LandingProblem() {
           </h2>
           <p className={styles.body}>
             City governments respond to problems every day. But responding is
-            not solving. Without a process that continues past the response —
-            into the underlying cause, the defined problem, the designed
-            solution — the same issues keep reappearing, cycle after cycle,
+            not solving. Without a process that continues past the response into
+            the underlying causes, the defined issues, and the designed
+            solutions, the same problems keep resurfacing, cycle after cycle,
             compounding as they go.
           </p>
         </div>
@@ -52,9 +52,9 @@ export default function LandingProblem() {
         </div>
 
         <p className={styles.close}>
-          This is not a failure of effort or intention. It is an absence of
-          system. And every cycle that passes without resolution makes the next
-          one harder.
+          This is not a failure of effort or intention. It is a signal of an
+          ineffective system. And every cycle that passes without resolution
+          makes the next one harder.
         </p>
       </div>
     </section>

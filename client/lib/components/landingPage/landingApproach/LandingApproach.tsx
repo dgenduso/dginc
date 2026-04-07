@@ -11,7 +11,7 @@ const phases = [
     number: "02",
     name: "Diagnose",
     description:
-      "Identify the underlying causes. What conditions are generating this problem? Which of them, if addressed, would prevent it from reappearing?",
+      "Identify the underlying causes. What conditions are generating this problem? Which of them, if addressed, would have the greatest impact on preventing it from reappearing?",
   },
   {
     number: "03",
@@ -29,7 +29,7 @@ const phases = [
     number: "05",
     name: "Deliver",
     description:
-      "Implement, monitor, and confirm the experience actually changed. Not 'did we ship it' — but 'did the problem stop appearing?' Band-aid work continues in parallel so residents don't wait while the deeper work happens.",
+      "Implement, evaluate, and confirm the experience actually changed. Not asking, 'did we deliver it?'. Instead asking, 'did the problem stop appearing?' Band-aid work continues in parallel so residents don't wait while the deeper work happens.",
   },
 ];
 
@@ -39,9 +39,7 @@ export default function LandingApproach() {
       <div className={styles.inner}>
         <div className={styles.header}>
           <p className={styles.label}>The approach</p>
-          <h2 className={styles.heading}>
-            A system built for solving.
-          </h2>
+          <h2 className={styles.heading}>A system built for solving.</h2>
           <p className={styles.intro}>
             Solving problems consistently requires a system. We help city
             governments implement one — a structured process that moves from
@@ -49,9 +47,9 @@ export default function LandingApproach() {
             gets better at doing that over time.
           </p>
           <p className={styles.intro}>
-            Each phase produces the input the next phase needs. Shortcutting
-            the sequence is how you end up with well-executed solutions to the
-            wrong problems — which is where most organizations already are.
+            Each phase produces the input the next phase needs. Shortcutting the
+            sequence is how you end up with well-executed solutions to the wrong
+            problems, which is where most organizations already are.
           </p>
         </div>
 

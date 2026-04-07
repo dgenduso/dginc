@@ -20,9 +20,7 @@ export default function LandingWhyItHappens() {
         <div className={styles.top}>
           <div className={styles.cause}>
             <p className={styles.label}>Why it happens</p>
-            <h2 className={styles.heading}>
-              Built to respond. Not to solve.
-            </h2>
+            <h2 className={styles.heading}>Built to respond. Not to solve.</h2>
             <p className={styles.body}>
               This is not about effort, intention, or the quality of the people
               doing the work. Government was designed and optimized for
@@ -31,12 +29,12 @@ export default function LandingWhyItHappens() {
               response times, tickets closed, cases resolved.
             </p>
             <p className={styles.body}>
-              There is no equivalent system upstream. No process for moving
-              from symptom to cause to clearly defined problem to lasting
+              There is no equivalent system upstream. No process for moving from
+              symptom to cause to clearly defined opportunity space to lasting
               resolution. Information exists everywhere — in 311 calls, service
-              tickets, case notes — but it never flows through the organization
-              as learning. It gets captured and stored. Never used to understand
-              what is actually happening and why.
+              tickets, case notes, conversations — but it never flows through
+              the organization as learning. It gets captured and stored, but
+              rarerly used to understand what is actually happening and why.
             </p>
             <p className={styles.body}>
               This is not a resource problem. It is not a people problem. It is
@@ -57,9 +55,9 @@ export default function LandingWhyItHappens() {
               </div>
             ))}
             <p className={styles.deficitsClose}>
-              A city that cannot afford to keep operating the way it does —
-              serving residents who no longer believe it can change. That is
-              what makes this existential.
+              A city that cannot afford to keep operating the way it does,
+              increasing costs and decreasing trust in a cyclical manner. That
+              is what makes this problem existential.
             </p>
           </div>
         </div>
