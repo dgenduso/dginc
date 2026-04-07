@@ -7,16 +7,26 @@ export default function LandingHero() {
       <div className={styles.inner}>
         <p className={styles.eyebrow}>Dan Genduso, Inc</p>
         <h1 className={styles.headline}>
-          Help your organization truly understand the people it serves.
+          Start solving problems. Not just responding to them.
         </h1>
         <p className={styles.subhead}>
-          Most organizations are built to execute work — not to continuously
-          learn. We help you change that, so every interaction deepens
-          understanding and every decision improves how you serve.
+          Every city has a system for responding to problems. Few have a system
+          for solving them consistently, sustainably, and across issues. The
+          same problems keep reappearing, cycle after cycle, causing residents
+          to lose trust in the system.
+        </p>
+        <p className={styles.subhead}>
+          We help city governments operate differently — learning from
+          residents, systematically solving problems, and continuously improving
+          how they serve.
+          {/* We help organizations make the shift — from a system built to respond, to one built to solve. */}
         </p>
         <div className={styles.actions}>
-          <CalendlyButton label="Start a Conversation" className={styles.primaryBtn} />
-          <a href="#model" className={styles.secondaryBtn}>
+          <CalendlyButton
+            label="Start a Conversation"
+            className={styles.primaryBtn}
+          />
+          <a href="#approach" className={styles.secondaryBtn}>
             See How It Works
           </a>
         </div>

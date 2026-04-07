@@ -1,0 +1,103 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+
+.intro {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 1rem;
+}
+
+.intro:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.phase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.phase:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.phaseLeft {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.phaseNumber {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.phaseName {
+  font-size: clamp(1.05rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.phaseDesc {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+  padding-left: 2rem;
+}
+
+@media (min-width: 640px) {
+  .phase {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .phaseLeft {
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 120px;
+    flex-shrink: 0;
+  }
+
+  .phaseDesc {
+    padding-left: 0;
+  }
+}

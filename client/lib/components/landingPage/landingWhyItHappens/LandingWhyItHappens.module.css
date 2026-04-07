@@ -1,0 +1,110 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.label,
+.deficitsLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 1rem;
+}
+
+.body:last-child {
+  margin-bottom: 0;
+}
+
+.deficits {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.deficitsIntro {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 2rem;
+}
+
+.deficit {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.deficit:last-of-type {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.deficitName {
+  font-size: clamp(1.05rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.deficitDetail {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+}
+
+.deficitsClose {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  font-style: italic;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .top {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  .cause,
+  .deficits {
+    flex: 1;
+  }
+
+  .deficits {
+    padding-top: 0;
+    border-top: none;
+    border-left: 1px solid var(--border);
+    padding-left: 3rem;
+  }
+}

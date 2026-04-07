@@ -1,0 +1,71 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 2.5rem;
+}
+
+.item {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+
+.item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.item::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.close {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground);
+  font-weight: 600;
+}
