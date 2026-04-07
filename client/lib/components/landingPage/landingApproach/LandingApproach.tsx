@@ -29,7 +29,7 @@ const phases = [
     number: "05",
     name: "Deliver",
     description:
-      "Implement, evaluate, and confirm the experience actually changed. Not asking, 'did we deliver it?'. Instead asking, 'did the problem stop appearing?' Band-aid work continues in parallel so residents don't wait while the deeper work happens.",
+      "Implement, evaluate, and confirm the experience actually changed. Not asking, 'did we deliver it?' Instead asking, 'did the problem stop appearing?' Band-aid work continues in parallel so residents don't wait while the deeper work happens.",
   },
 ];
 
