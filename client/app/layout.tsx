@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Dan Genduso",
     type: "website",
+    images: [{ url: "/images/logo-rectangle.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/logo-rectangle.png"],
   },
 };
 
