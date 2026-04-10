@@ -53,6 +53,9 @@ The cost of living framing is wrong. The question isn't "how do we lower costs" 
 
 ## Process & Methods
 
+### Innovation Is Made of Nested Learning Cycles
+The 5D framework looks linear from the outside — five phases, one after another. Inside, it's something more interesting: learning cycles nested within learning cycles. Discover is a learning cycle. Diagnose is a learning cycle informed by Discover. Each phase deepens the learning of the last. AI's role changes at each level — from capturing and synthesizing customer signal, to helping diagnose causes, to evaluating whether the delivered solution actually changed the experience. Understanding this nesting is the key to understanding why the sequence can't be shortcut, and why the process compounds over time.
+
 ### What It Means to Serve
 Serving starts with understanding. One interaction can lead to immediate action, future evolution, or both. Learning from people is part of serving them — not a separate activity that happens before the "real work" begins.
 

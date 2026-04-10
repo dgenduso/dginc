@@ -1,26 +1,23 @@
+"use client";
+
 import CalendlyButton from "@/lib/components/calendly/CalendlyButton";
+import { useSector } from "@/lib/sectors/SectorContext";
 import styles from "./LandingHero.module.css";
 
 export default function LandingHero() {
+  const { active } = useSector();
+  const { eyebrow, headline, subheads } = active.hero;
+
   return (
     <section className={styles.hero}>
       <div className={styles.inner}>
-        <p className={styles.eyebrow}>Dan Genduso, Inc</p>
-        <h1 className={styles.headline}>
-          Start solving problems. Not just responding to them.
-        </h1>
-        <p className={styles.subhead}>
-          Every city has a system for responding to problems. Few have a system
-          for solving them consistently, sustainably, and across issues. The
-          same problems keep reappearing, cycle after cycle, causing residents
-          to lose trust in the system.
-        </p>
-        <p className={styles.subhead}>
-          We help city governments operate differently — learning from
-          residents, systematically solving problems, and continuously improving
-          how they serve.
-          {/* We help organizations make the shift — from a system built to respond, to one built to solve. */}
-        </p>
+        <p className={styles.eyebrow}>{eyebrow}</p>
+        <h1 className={styles.headline}>{headline}</h1>
+        {subheads.map((text, i) => (
+          <p key={i} className={styles.subhead}>
+            {text}
+          </p>
+        ))}
         <div className={styles.actions}>
           <CalendlyButton
             label="Start a Conversation"

@@ -1,23 +1,23 @@
 import LandingHero from "@/lib/components/landingPage/landingHero/LandingHero";
 import LandingProblem from "@/lib/components/landingPage/landingProblem/LandingProblem";
-import LandingWhyItHappens from "@/lib/components/landingPage/landingWhyItHappens/LandingWhyItHappens";
-import LandingApproach from "@/lib/components/landingPage/landingApproach/LandingApproach";
-import LandingWhatItInvolves from "@/lib/components/landingPage/landingWhatItInvolves/LandingWhatItInvolves";
-import LandingOutcome from "@/lib/components/landingPage/landingOutcome/LandingOutcome";
+import LandingRootCause from "@/lib/components/landingPage/landingRootCause/LandingRootCause";
+import LandingInsight from "@/lib/components/landingPage/landingInsight/LandingInsight";
+import LandingDesign from "@/lib/components/landingPage/landingDesign/LandingDesign";
+import LandingAI from "@/lib/components/landingPage/landingAI/LandingAI";
+import LandingDeliver from "@/lib/components/landingPage/landingDeliver/LandingDeliver";
 import LandingFinalCTA from "@/lib/components/landingPage/landingFinalCTA/LandingFinalCTA";
-import LandingInsightsPreview from "@/lib/components/landingPage/landingInsightsPreview/LandingInsightsPreview";
 
 export default function Home() {
   return (
     <>
       <LandingHero />
       <LandingProblem />
-      <LandingWhyItHappens />
-      <LandingApproach />
-      <LandingWhatItInvolves />
-      <LandingOutcome />
+      <LandingRootCause />
+      <LandingInsight />
+      <LandingDesign />
+      <LandingAI />
+      <LandingDeliver />
       <LandingFinalCTA />
-      <LandingInsightsPreview />
     </>
   );
 }

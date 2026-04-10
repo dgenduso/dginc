@@ -1,0 +1,160 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Trigger button */
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  color: var(--foreground-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.trigger:hover {
+  color: var(--foreground);
+  border-color: var(--foreground-muted);
+}
+
+.triggerIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.triggerLabel {
+  display: none;
+}
+
+.triggerChevron {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.triggerChevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  min-width: 180px;
+  z-index: 200;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground-muted);
+  text-align: left;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.dropdownItem:hover {
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+.dropdownItemActive {
+  color: var(--foreground);
+  background: var(--surface);
+}
+
+.dropdownItemDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.dropdownItemDotActive {
+  background: var(--accent);
+}
+
+/* Tooltip */
+.tooltipWrapper {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 300;
+  pointer-events: none;
+}
+
+.tooltip {
+  background: var(--foreground);
+  color: var(--background);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: auto;
+  cursor: pointer;
+  animation: fadeIn 0.2s ease;
+}
+
+.tooltipArrow {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--foreground);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .triggerLabel {
+    display: inline;
+  }
+
+  .trigger {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+  }
+}

@@ -1,35 +1,56 @@
 import styles from "./LandingOutcome.module.css";
 
-const outcomes = [
-  "Residents see problems actually getting solved — not faster responses, but the things that kept happening to them stopping.",
-  "Repeat service demand declines as underlying causes get resolved — the expensive cycle of symptom management begins to wind down.",
-  "Budget pressure eases — not through cuts, but through retiring the work that kept being required because nothing was being solved.",
-  "Trust begins to rebuild — not through communication strategies, but through visible, felt progress in the resident experience.",
-  "The capability compounds — every problem solved makes the next one faster, every diagnosis sharpens the next.",
+const changes = [
+  "Customers feel genuinely understood — conversations shift from transactional to meaningful",
+  "Solutions hit the mark and get adopted — less friction, less rework, less 'we built the wrong thing'",
+  "Teams work in alignment — shared understanding replaces assumptions and silos",
+];
+
+const results = [
+  "Trust increases — customers believe you understand and will consistently deliver",
+  "Churn declines — customers stay because they're getting what they actually need",
+  "Revenue grows — retention, expansion, and referrals compound",
+  "Customer satisfaction increases — not as a metric chased, but as a natural outcome",
+  "Organizational value increases — the learning engine is itself a competitive advantage",
 ];
 
 export default function LandingOutcome() {
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
-        <p className={styles.label}>The outcome</p>
-        <h2 className={styles.heading}>Problems start going away.</h2>
-        <p className={styles.body}>
-          For the first time, residents experience something different — not a
-          faster response to the same recurring problem, but the problem
-          actually stopping. That shift is felt before it is measured. And once
-          residents feel it, trust begins to move.
-        </p>
-        <ul className={styles.list}>
-          {outcomes.map((outcome) => (
-            <li key={outcome} className={styles.item}>
-              {outcome}
-            </li>
-          ))}
-        </ul>
+        <div className={styles.header}>
+          <p className={styles.label}>The outcome</p>
+          <h2 className={styles.heading}>The engine starts compounding.</h2>
+        </div>
+
+        <div className={styles.blocks}>
+          <div className={styles.block}>
+            <p className={styles.blockLabel}>What changes</p>
+            <ul className={styles.list}>
+              {changes.map((item) => (
+                <li key={item} className={styles.item}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={styles.block}>
+            <p className={styles.blockLabel}>What results</p>
+            <ul className={styles.list}>
+              {results.map((item) => (
+                <li key={item} className={styles.item}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
         <p className={styles.close}>
-          The organization shifts from measuring activity to measuring progress.
-          And the system keeps improving — because that is what it was built to do.
+          The organization stops optimizing the old engine and starts running a
+          new one. And because it&apos;s built on learning, it keeps getting
+          better at everything it does.
         </p>
       </div>
     </section>

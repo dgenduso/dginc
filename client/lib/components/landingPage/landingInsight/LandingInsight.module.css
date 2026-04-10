@@ -1,6 +1,6 @@
 .section {
   padding: 7rem 1.5rem;
-  background: var(--background);
+  background: var(--surface);
   border-top: 1px solid var(--border);
 }
 
@@ -54,15 +54,7 @@
   border-bottom: 1px solid var(--border);
 }
 
-.bulletTitle {
-  display: block;
-  font-size: clamp(1rem, 2.2vw, 1.05rem);
-  font-weight: 700;
-  color: var(--foreground);
-  margin-bottom: 0.25rem;
-}
-
-.impact {
+.close {
   font-size: clamp(1rem, 2.2vw, 1.1rem);
   line-height: 1.75;
   color: var(--foreground-muted);
@@ -70,17 +62,11 @@
 }
 
 .keyLine {
-  margin: 5rem 0;
+  margin: 5rem 0 0;
   text-align: center;
   font-size: clamp(1.6rem, 5vw, 2.8rem);
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.03em;
   color: var(--foreground);
-}
-
-.bridge {
-  font-size: clamp(1rem, 2.2vw, 1.1rem);
-  line-height: 1.75;
-  color: var(--foreground-muted);
 }

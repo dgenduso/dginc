@@ -1,18 +1,12 @@
 .section {
   padding: 5rem 1.5rem;
-  background: var(--surface);
+  background: var(--background);
   border-top: 1px solid var(--border);
 }
 
 .inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.header {
   max-width: 640px;
-  margin: 0 auto 3.5rem;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .label {
@@ -30,30 +24,14 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--foreground);
-}
-
-.blocks {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.block {
-  padding: 2.5rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.block:last-child {
-  border-bottom: 1px solid var(--border);
-}
-
-.blockLabel {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--foreground-muted);
   margin-bottom: 1.5rem;
+}
+
+.body {
+  font-size: clamp(1rem, 2.2vw, 1.05rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 1rem;
 }
 
 .list {
@@ -61,6 +39,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
+  margin: 1.5rem 0;
 }
 
 .item {
@@ -85,35 +64,9 @@
 }
 
 .close {
-  max-width: 640px;
-  margin: 3rem auto 0;
   font-size: clamp(1rem, 2.2vw, 1.05rem);
   line-height: 1.75;
   color: var(--foreground);
   font-weight: 600;
-  text-align: center;
-}
-
-@media (min-width: 860px) {
-  .blocks {
-    flex-direction: row;
-    gap: 0;
-  }
-
-  .block {
-    flex: 1;
-    padding: 2.5rem 2.5rem;
-    border-top: none;
-    border-left: 1px solid var(--border);
-  }
-
-  .block:first-child {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .block:last-child {
-    border-bottom: none;
-    padding-right: 0;
-  }
+  margin-top: 2rem;
 }

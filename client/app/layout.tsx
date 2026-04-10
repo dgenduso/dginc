@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/lib/components/navigation/Navbar/Navbar";
 import Footer from "@/lib/components/navigation/Footer/Footer";
+import { SectorProvider } from "@/lib/sectors/SectorContext";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,9 +41,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <SectorProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </SectorProvider>
       </body>
     </html>
   );

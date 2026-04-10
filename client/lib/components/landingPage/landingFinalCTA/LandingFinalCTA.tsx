@@ -6,11 +6,12 @@ export default function LandingFinalCTA() {
     <section className={styles.section}>
       <div className={styles.inner}>
         <h2 className={styles.heading}>
-          Ready to change how your city operates?
+          Ready to break through?
         </h2>
         <p className={styles.body}>
-          If the same problems keep reappearing and you are ready to change
-          that, let&apos;s talk about where to begin.
+          If you&apos;re ready to change how your organization operates — and
+          build the engine that drives consistent growth — let&apos;s talk
+          about where to begin.
         </p>
         <CalendlyButton label="Start the Conversation" className={styles.btn} />
       </div>

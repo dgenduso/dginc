@@ -1,6 +1,6 @@
 .section {
   padding: 5rem 1.5rem;
-  background: var(--surface);
+  background: var(--background);
   border-top: 1px solid var(--border);
 }
 
@@ -32,38 +32,56 @@
   color: var(--foreground);
 }
 
-.blocks {
+.panels {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.block {
+.panel {
   padding: 2.5rem 0;
   border-top: 1px solid var(--border);
 }
 
-.block:last-child {
+.panel:last-child {
   border-bottom: 1px solid var(--border);
 }
 
-.blockLabel {
+.panelTag {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--foreground-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.list {
+.panelHeading {
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.panelHeadingAccent {
+  color: var(--accent);
+}
+
+.panelBody {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+}
+
+.bullets {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.item {
+.bullet {
   font-size: clamp(0.9rem, 2vw, 0.975rem);
   line-height: 1.65;
   color: var(--foreground-muted);
@@ -72,11 +90,11 @@
   position: relative;
 }
 
-.item:last-child {
+.bullet:last-child {
   border-bottom: 1px solid var(--border);
 }
 
-.item::before {
+.bullet::before {
   content: "→";
   position: absolute;
   left: 0;
@@ -84,35 +102,25 @@
   font-weight: 700;
 }
 
-.close {
-  max-width: 640px;
-  margin: 3rem auto 0;
-  font-size: clamp(1rem, 2.2vw, 1.05rem);
-  line-height: 1.75;
-  color: var(--foreground);
-  font-weight: 600;
-  text-align: center;
-}
-
 @media (min-width: 860px) {
-  .blocks {
+  .panels {
     flex-direction: row;
     gap: 0;
   }
 
-  .block {
+  .panel {
     flex: 1;
     padding: 2.5rem 2.5rem;
     border-top: none;
     border-left: 1px solid var(--border);
   }
 
-  .block:first-child {
+  .panel:first-child {
     border-left: none;
     padding-left: 0;
   }
 
-  .block:last-child {
+  .panel:last-child {
     border-bottom: none;
     padding-right: 0;
   }

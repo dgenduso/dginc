@@ -1,0 +1,132 @@
+.section {
+  padding: 7rem 1.5rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--foreground);
+  margin-bottom: 1.5rem;
+}
+
+.body {
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 1rem;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 2.5rem 0;
+}
+
+.track {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.track:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.trackLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  margin-bottom: 0.5rem;
+}
+
+.trackHeading {
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.trackBody {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+}
+
+.close {
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 3.5rem;
+}
+
+.outcomesLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  margin-bottom: 2rem;
+}
+
+.outcomeGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.outcomeGroupLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.outcomeList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.outcomeItem {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+  padding: 0.875rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.outcomeItem:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 640px) {
+  .outcomeGroups {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .outcomeGroup {
+    flex: 1;
+  }
+}
