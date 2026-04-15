@@ -79,8 +79,8 @@ export const sectors: SectorData[] = [
           detail: "More outreach, more pipeline, more pressure. But churn quietly offsets the gains and net growth stays flat.",
         },
         {
-          problem: "New initiatives get launched.",
-          detail: "Reorganizations, OKRs, strategy offsites. Each one promises a breakthrough. None of them change the underlying dynamic.",
+          problem: "Changes keep getting made. Value doesn't improve.",
+          detail: "New features. New platforms. Reorganizations. Each one is real work, real investment, real change. But without deep understanding of what customers actually need, the changes don't move the needle on value. The product gets more bells and whistles. The service gets tweaked. The org gets restructured. And customers still don't feel meaningfully better served.",
         },
         {
           problem: "Work expands. Impact doesn't.",

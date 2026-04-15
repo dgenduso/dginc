@@ -8,8 +8,8 @@ const tracks = [
   },
   {
     label: "Our track",
-    heading: "We improve the OS alongside you.",
-    body: "We implement changes to how your organization operates — one cycle at a time. Each OS cycle improves the inputs, the learning, and the outputs of your next offering cycle.",
+    heading: "We treat your operating system as a product.",
+    body: "We lead the work of transforming how your organization innovates — across people, process, policy, and tools. We prioritize what changes each cycle, run the transformation work, and integrate it alongside your delivery teams. The OS evolves continuously, just as your offerings do.",
   },
 ];
 
@@ -33,8 +33,12 @@ export default function LandingDeliver() {
         <p className={styles.label}>How we deliver</p>
         <h2 className={styles.heading}>Two tracks. One transformation.</h2>
         <p className={styles.body}>
-          We run alongside your team — not instead of them. The transformation
-          happens without stopping the business.
+          Most operating model changes happen once and then calcify. A reorg
+          that shuffles the structure but doesn't change how work gets done. A
+          new process that requires months of training and gets quietly abandoned.
+          We take a different approach — evolving the operating system the same
+          way great teams build products: incrementally, continuously, in the
+          same rhythm as the work itself. Less disruption. More traction.
         </p>
 
         <div className={styles.tracks}>
