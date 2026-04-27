@@ -33,36 +33,131 @@
   font-size: clamp(1rem, 2.2vw, 1.1rem);
   line-height: 1.75;
   color: #888888;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
-.patterns {
+.tabs {
   display: flex;
-  flex-direction: column;
   gap: 0;
+  margin-bottom: 2.5rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #666666;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  text-align: center;
+}
+
+.tab + .tab {
+  border-left: 1px solid #2a2a2a;
+}
+
+.tabActive {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.tab:not(.tabActive):hover {
+  background: #181818;
+  color: #aaaaaa;
+}
+
+.panel {
   margin-bottom: 3rem;
 }
 
-.pattern {
-  padding: 1.75rem 0;
-  border-top: 1px solid #2a2a2a;
+.quote {
+  font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #f0f0f0;
+  margin-bottom: 1.25rem;
 }
 
-.pattern:last-child {
-  border-bottom: 1px solid #2a2a2a;
-}
-
-.patternTitle {
-  font-size: clamp(1rem, 2.2vw, 1.1rem);
-  font-weight: 700;
-  color: #e8e8e8;
-  margin-bottom: 0.375rem;
-}
-
-.patternDetail {
+.panelBody {
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.75;
   color: #888888;
+  margin-bottom: 1.5rem;
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bullet {
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  line-height: 1.7;
+  color: #888888;
+  padding: 0.75rem 0;
+  border-top: 1px solid #2a2a2a;
+}
+
+.bullet:last-child {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.impact {
+  margin-bottom: 3rem;
+}
+
+.impactLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+.impactGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.impactCol {
+  flex: 1;
+}
+
+.impactColLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #e8e8e8;
+  margin-bottom: 0.75rem;
+}
+
+.impactList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.impactItem {
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  line-height: 1.7;
+  color: #888888;
+  padding: 0.75rem 0;
+  border-top: 1px solid #2a2a2a;
+}
+
+.impactItem:last-child {
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .bottomLine {
@@ -85,4 +180,11 @@
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.75;
   color: #888888;
+}
+
+@media (min-width: 600px) {
+  .impactGrid {
+    flex-direction: row;
+    gap: 3rem;
+  }
 }

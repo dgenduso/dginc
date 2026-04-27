@@ -1,0 +1,95 @@
+/* Chain — desktop only */
+.chainWrap {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .chainWrap {
+    display: block;
+    margin-bottom: 2.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem 1.5rem 1rem;
+    overflow: hidden;
+  }
+}
+
+/* Chain bars */
+.chain {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.chainNode {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 0.25rem;
+}
+
+/* Bars */
+.barWrap {
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: center;
+}
+
+.bar {
+  width: 32px;
+  border-radius: 3px 3px 0 0;
+}
+
+.bar_very_low { height: 16px;  background: var(--border); }
+.bar_low      { height: 36px;  background: var(--foreground-muted); opacity: 0.35; }
+.bar_low_mid  { height: 64px;  background: var(--foreground-muted); opacity: 0.6; }
+.bar_high     { height: 148px; background: var(--foreground); }
+.bar_outcome  { height: 28px;  background: transparent; border: 1px dashed var(--border); border-bottom: none; }
+
+/* Node labels */
+.nodeName {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--foreground-muted);
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.nodeNameMuted {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+/* Arrow */
+.arrow {
+  position: absolute;
+  right: -6px;
+  bottom: 72px;
+  font-size: 0.7rem;
+  color: var(--border);
+  z-index: 1;
+}
+
+/* Axis row */
+.axisRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  padding: 0 0.25rem;
+}
+
+.axisLabel {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  opacity: 0.6;
+}

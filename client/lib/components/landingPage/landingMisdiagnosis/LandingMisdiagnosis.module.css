@@ -1,0 +1,110 @@
+.section {
+  padding: 7rem 1.5rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--foreground);
+  margin-bottom: 2rem;
+}
+
+.body {
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin-bottom: 1.25rem;
+}
+
+.signal {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  border-left: 3px solid var(--accent);
+  background: var(--background);
+  border-radius: 0 8px 8px 0;
+}
+
+.signalLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.signalBody {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+}
+
+.subheading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  margin-bottom: 1.5rem;
+}
+
+.outcomes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.outcome {
+  flex: 1;
+  padding: 1.75rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+@media (min-width: 640px) {
+  .outcomes {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+.outcomeTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+  margin-bottom: 0.5rem;
+}
+
+.outcomeHeading {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.75rem;
+}
+
+.outcomeBody {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.75;
+  color: var(--foreground-muted);
+}
