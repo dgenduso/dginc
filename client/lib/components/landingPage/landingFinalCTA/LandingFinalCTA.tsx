@@ -6,14 +6,18 @@ export default function LandingFinalCTA() {
     <section className={styles.section}>
       <div className={styles.inner}>
         <h2 className={styles.heading}>
-          Ready to break through?
+          Ready to generate higher returns on your innovation investment?
         </h2>
         <p className={styles.body}>
-          If you&apos;re ready to change how your organization operates — and
-          build the engine that drives consistent growth — let&apos;s talk
-          about where to begin.
+          We help organizations spread investment across the full innovation
+          process — not just delivery — so that what gets built consistently
+          adds value and the return compounds over time.
         </p>
-        <CalendlyButton label="Start the Conversation" className={styles.btn} />
+        <CalendlyButton label="Let's Chat" className={styles.btn} />
+        <p className={styles.note}>
+          Most organizations I work with have already tried the delivery fixes.
+          This conversation starts upstream.
+        </p>
       </div>
     </section>
   );

@@ -59,6 +59,7 @@
 .primaryBtn {
   background: var(--accent);
   color: var(--accent-foreground);
+  border: none;
 }
 
 .primaryBtn:hover {

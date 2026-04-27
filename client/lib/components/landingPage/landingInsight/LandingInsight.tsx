@@ -1,20 +1,35 @@
 import styles from "./LandingInsight.module.css";
 
-const steps = [
+const phases = [
   {
-    title: "Assess the current state.",
-    detail:
-      "We work alongside your teams to understand how the organization currently innovates — how work moves from customer signal to delivered solution, where teams collaborate well and where they don't, and where the learning loop is breaking down.",
+    number: "01",
+    name: "Discover",
+    description:
+      "Understand what's actually happening — where work is getting stuck, what's not landing with customers, and where the gap between investment and outcome is most acute.",
   },
   {
-    title: "Run an innovation retrospective.",
-    detail:
-      "We bring team leads together and apply the 5D process to the operating system itself — discovering problems in how the org currently works, diagnosing root causes, defining opportunity areas, and designing the first set of changes.",
+    number: "02",
+    name: "Diagnose",
+    description:
+      "Trace the chain back. Most delivery problems originate in how problems are understood, how information moves through the organization, and how work gets defined before it reaches the people building it.",
   },
   {
-    title: "Deliver the first cycle of improvements.",
-    detail:
-      "We implement that initial set of OS changes, then run a cycle alongside your teams. After the cycle, we retrospect again — learning what worked, surfacing new problems, and adding the next set of improvements.",
+    number: "03",
+    name: "Define",
+    description:
+      "Identify the highest-leverage opportunities — the specific upstream changes that will produce the most meaningful improvement in what gets delivered and the value it creates.",
+  },
+  {
+    number: "04",
+    name: "Design",
+    description:
+      "Design interventions across people, process, policy, and tools. Targeted changes that address the actual causes — not a sweeping transformation, but improvements built to compound.",
+  },
+  {
+    number: "05",
+    name: "Deliver",
+    description:
+      "Implement the changes and build the organizational capability to keep improving — so that each innovation cycle produces better outcomes and more consistent value than the last.",
   },
 ];
 
@@ -22,31 +37,48 @@ export default function LandingInsight() {
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
-        <p className={styles.label}>Where we begin</p>
+        <p className={styles.label}>How we work</p>
         <h2 className={styles.heading}>
-          We apply the process to our work of transforming your operating
-          system.
+          Building the capability to consistently learn — and consistently
+          deliver.
         </h2>
         <p className={styles.body}>
-          Before designing anything, we need to understand where the
-          organization currently is. We assess the current state of how your
-          teams innovate — then bring leadership together to run the 5D process
-          on the operating system itself. The same approach used to solve
-          customer problems gets used to improve how the org solves problems.
+          Innovation is a learning process. Every component of it is too.
+          Customer conversations are a learning process. Discovery is a
+          learning process. Each phase is a learning process. When the
+          organization is working, understanding deepens at every level and
+          compounds over time.
+        </p>
+        <p className={styles.body}>
+          We use the same five-phase process to build that learning capability
+          — starting with the inputs that feed the whole system. Customer
+          conversations, retrospectives, feedback, usage data — these are the
+          raw signals innovation runs on. Most organizations generate them and
+          lose them. We assess not just whether those inputs exist, but how to
+          improve their quality: coaching the people having customer
+          conversations, building AI-assisted systems that surface patterns,
+          creating incentives that reward learning over transacting, designing
+          products that generate better signal. Changes across people, process,
+          policy, and tools — at the inputs layer and at every phase that
+          follows.
         </p>
 
-        <div className={styles.bullets}>
-          {steps.map((s) => (
-            <div key={s.title} className={styles.bullet}>
-              <span className={styles.bulletTitle}>{s.title}</span>
-              {s.detail}
+        <div className={styles.phases}>
+          {phases.map((phase) => (
+            <div key={phase.number} className={styles.phase}>
+              <p className={styles.phaseNumber}>{phase.number}</p>
+              <div className={styles.phaseContent}>
+                <h3 className={styles.phaseName}>{phase.name}</h3>
+                <p className={styles.phaseDescription}>{phase.description}</p>
+              </div>
             </div>
           ))}
         </div>
 
-        <p className={styles.keyLine}>
-          To break through, you don&apos;t need more activity. You need deeper
-          understanding.
+        <p className={styles.close}>
+          The goal is not a better process document. It is an organization
+          with the capability to learn from every cycle and deliver more value
+          because of it.
         </p>
       </div>
     </section>

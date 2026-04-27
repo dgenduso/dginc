@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  color: var(--foreground);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+}
+
+.ring {
+  animation: spin 18s linear infinite;
+  transform-origin: 160px 160px;
+}
+
+.label {
+  font-size: 11px;
+  font-family: inherit;
+  fill: currentColor;
+  opacity: 0.55;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.flame {
+  animation: flicker 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes flicker {
+  from { opacity: 0.25; }
+  to   { opacity: 0.55; }
+}

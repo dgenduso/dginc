@@ -31,7 +31,7 @@ export default function Footer() {
           <p className={styles.copy}>
             &copy; {year} Dan Genduso, Inc. All rights reserved.
           </p>
-          <CalendlyButton label="Start a Conversation" className={styles.cta} />
+          <CalendlyButton label="Let's Chat" className={styles.cta} />
         </div>
       </div>
     </footer>

@@ -11,7 +11,7 @@
 }
 
 .heading {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -23,7 +23,7 @@
   font-size: clamp(1rem, 2.5vw, 1.1rem);
   line-height: 1.75;
   color: var(--foreground-muted);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .btn {
@@ -37,8 +37,15 @@
   transition: opacity 0.15s ease;
   cursor: pointer;
   border: none;
+  margin-bottom: 2rem;
 }
 
 .btn:hover {
   opacity: 0.88;
+}
+
+.note {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--foreground-muted);
 }

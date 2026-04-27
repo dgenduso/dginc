@@ -1,7 +1,9 @@
 .section {
   padding: 7rem 1.5rem;
-  background: var(--surface);
-  border-top: 1px solid var(--border);
+  background: #111111;
+  border-top: none;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 .inner {
@@ -14,7 +16,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--foreground-muted);
+  color: #666666;
   margin-bottom: 1.5rem;
 }
 
@@ -23,15 +25,15 @@
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.03em;
-  color: var(--foreground);
-  margin-bottom: 2rem;
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
 }
 
 .body {
   font-size: clamp(1rem, 2.2vw, 1.1rem);
   line-height: 1.75;
-  color: var(--foreground-muted);
-  margin-bottom: 2.5rem;
+  color: #888888;
+  margin-bottom: 3rem;
 }
 
 .patterns {
@@ -43,28 +45,44 @@
 
 .pattern {
   padding: 1.75rem 0;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid #2a2a2a;
 }
 
 .pattern:last-child {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .patternTitle {
   font-size: clamp(1rem, 2.2vw, 1.1rem);
   font-weight: 700;
-  color: var(--foreground);
+  color: #e8e8e8;
   margin-bottom: 0.375rem;
 }
 
 .patternDetail {
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.75;
-  color: var(--foreground-muted);
+  color: #888888;
 }
 
-.close {
-  font-size: clamp(1rem, 2.2vw, 1.1rem);
+.bottomLine {
+  padding: 2rem;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+}
+
+.bottomLineLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 0.75rem;
+}
+
+.bottomLineBody {
+  font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.75;
-  color: var(--foreground-muted);
+  color: #888888;
 }

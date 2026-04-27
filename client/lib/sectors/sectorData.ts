@@ -60,10 +60,10 @@ export const sectors: SectorData[] = [
     label: "General",
     stakeholder: "customer",
     hero: {
-      eyebrow: "Dan Genduso, Inc",
-      headline: "Break Through the Growth Barrier.",
+      eyebrow: "IMPROVE YOUR INNOVATION CAPABILITY",
+      headline: "Consistently Deliver Value.",
       subheads: [
-        "We help organizations transform how they learn and innovate so they can understand customer needs deeply, build the right solutions, and unlock sustained growth.",
+        "Organizations invest heavily in building and evolving products and services, but fail to consistently see a return on that investment. We help organizations build and improve their innovation capability to more effectively and consistently deliver value.",
       ],
     },
     problem: {
@@ -72,19 +72,23 @@ export const sectors: SectorData[] = [
       patterns: [
         {
           problem: "Teams keep shipping features.",
-          detail: "The roadmap stays full. Velocity looks healthy. But customers aren't meaningfully better served than they were a year ago.",
+          detail:
+            "The roadmap stays full. Velocity looks healthy. But customers aren't meaningfully better served than they were a year ago.",
         },
         {
           problem: "Sales pushes harder.",
-          detail: "More outreach, more pipeline, more pressure. But churn quietly offsets the gains and net growth stays flat.",
+          detail:
+            "More outreach, more pipeline, more pressure. But churn quietly offsets the gains and net growth stays flat.",
         },
         {
           problem: "Changes keep getting made. Value doesn't improve.",
-          detail: "New features. New platforms. Reorganizations. Each one is real work, real investment, real change. But without deep understanding of what customers actually need, the changes don't move the needle on value. The product gets more bells and whistles. The service gets tweaked. The org gets restructured. And customers still don't feel meaningfully better served.",
+          detail:
+            "New features. New platforms. Reorganizations. Each one is real work, real investment, real change. But without deep understanding of what customers actually need, the changes don't move the needle on value. The product gets more bells and whistles. The service gets tweaked. The org gets restructured. And customers still don't feel meaningfully better served.",
         },
         {
           problem: "Work expands. Impact doesn't.",
-          detail: "The organization is busy. Everyone is working. But the product doesn't meaningfully improve in the eyes of the customer. Growth plateaus. Churn increases.",
+          detail:
+            "The organization is busy. Everyone is working. But the product doesn't meaningfully improve in the eyes of the customer. Growth plateaus. Churn increases.",
         },
       ],
       close:

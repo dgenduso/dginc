@@ -19,7 +19,11 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <div className={styles.wordmark}>
           <Logo />
-          <Link href="/" className={styles.wordmarkText} onClick={() => setOpen(false)}>
+          <Link
+            href="/"
+            className={styles.wordmarkText}
+            onClick={() => setOpen(false)}
+          >
             Dan Genduso
           </Link>
         </div>
@@ -44,7 +48,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <CalendlyButton label="Start a Conversation" className={styles.ctaLink} />
+            <CalendlyButton label="Let's Chat" className={styles.ctaLink} />
           </li>
         </ul>
       </nav>
@@ -64,7 +68,10 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <CalendlyButton label="Start a Conversation" className={styles.mobileCta} />
+              <CalendlyButton
+                label="Start a Conversation"
+                className={styles.mobileCta}
+              />
             </li>
           </ul>
         </div>
