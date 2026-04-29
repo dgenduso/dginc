@@ -64,6 +64,34 @@
   opacity: 0.88;
 }
 
+/* Right side group (mobile: theme toggle + hamburger) */
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Theme toggle */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--foreground-muted);
+  border-radius: 6px;
+  transition: color 0.15s ease, background 0.15s ease;
+  padding: 4px;
+}
+
+.themeToggle:hover {
+  color: var(--foreground);
+  background: var(--surface);
+}
+
 /* Hamburger */
 .hamburger {
   display: flex;
@@ -147,7 +175,7 @@
 
 /* Desktop breakpoint */
 @media (min-width: 768px) {
-  .hamburger {
+  .navRight {
     display: none;
   }
 
@@ -158,5 +186,4 @@
   .mobileMenu {
     display: none;
   }
-
 }
