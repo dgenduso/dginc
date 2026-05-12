@@ -28,7 +28,7 @@ export const capabilities: Capability[] = [
   },
   {
     title: "Operating models",
-    body: "How an organization works is not fixed infrastructure — it's a product that can be designed and continuously improved. I design operating models across all four dimensions. I don't just define the change — I implement it and make it stick.",
+    body: "How an organization works is not fixed infrastructure. It is a product that can be designed and continuously improved. I design operating models across all four dimensions. I don't just define the change, I implement it and make it stick.",
     dims: ["people", "process", "policy", "product"],
   },
   {
@@ -38,12 +38,12 @@ export const capabilities: Capability[] = [
   },
   {
     title: "Learning systems",
-    body: "Alignment isn't compliance — it's shared understanding built through learning. I design the feedback loops, measurement systems, and operating rhythms that turn information into organizational intelligence.",
+    body: "Alignment isn't compliance. It is shared understanding built through learning. I design the feedback loops, measurement systems, and operating rhythms that turn information into organizational intelligence.",
     dims: ["people", "process", "policy", "product"],
   },
   {
     title: "Civic infrastructure",
-    body: "A city isn't a static thing to be administered — it's something residents build together, continuously. I design civic systems that give people real tools to organize, decide, fund, and build.",
+    body: "A city isn't a static thing to be administered. It is something residents build together, continuously. I design civic systems that give people real tools to organize, decide, fund, and build.",
     dims: ["people", "process", "policy", "product"],
   },
 ];
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     dims: ["people", "process", "policy", "product"],
     philosophy: "City as a product.",
     summary:
-      "A platform for residents to govern, organize, and build their local communities together — starting at the block level.",
+      "A platform for residents to govern, organize, and build their local communities together, starting at the block level.",
     detail:
       "Block communities as the activation mechanism, growing into a full city-building platform: events, ranked-choice voting, fundraising, permits, shared decision-making. Built on the belief that cities improve when residents have real infrastructure to build together.",
     tags: ["Build Your Block", "Civic Tech", "Community Platform"],
@@ -78,9 +78,9 @@ export const projects: Project[] = [
     dims: ["people", "process", "product"],
     philosophy: "Relationship as a product.",
     summary:
-      "An innovation and relationship platform — learn from customers, build with them, and grow trusted relationships in the process.",
+      "An innovation and relationship platform. Learn from customers, build with them, and grow trusted relationships in the process.",
     detail:
-      "A ground-up rethinking of how organizations build customer relationships. Built on the premise that the best products and services are built alongside the customers they serve, with the customer as a genuine partner — not just a source of feedback.",
+      "A ground-up rethinking of how organizations build customer relationships. Built on the premise that the best products and services are built alongside the customers they serve, with the customer as a genuine partner and not just a source of feedback.",
     tags: ["Build With Customers", "AI OS", "Learning Platform"],
   },
   {
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     dims: ["people", "process", "policy", "product"],
     philosophy: "Government as a Product.",
     summary:
-      "End-to-end digital infrastructure for a San Francisco Board of Supervisors race — built around the idea that government should be continuously built with residents, not broadcast at them.",
+      "End-to-end digital infrastructure for a San Francisco Board of Supervisors race, built around the idea that government should be continuously built with residents, not broadcast at them.",
     detail:
       "Site, messaging, constituent engagement tooling, and campaign strategy grounded in the belief that city government should function as one unified system in service of residents.",
     tags: ["Civic Tech", "Full-Stack", "SF Politics"],
@@ -121,15 +121,15 @@ export const timeline: TimelineEntry[] = [
     period: "2024 — Present",
     phase: "AI Builder",
     description:
-      "Focused on building a consulting practice with frameworks for innovation. Building two products — DiverseCiti and APOLLO1 (re-launch in the works)— using AI as a core part of how I work every day.",
+      "Focused on building a consulting practice with frameworks for innovation. Building two products — DiverseCiti and APOLLO1 — using AI as a core part of how I work every day.",
     learned:
-      "That one person with the right depth across functions, amplified by AI, can now do what used to require an entire team. The bottleneck is no longer capability — it is clarity.",
+      "That one person with the right depth across functions, amplified by AI, can now do what used to require an entire team. The bottleneck is no longer capability. It is clarity.",
   },
   {
     period: "2021 — 2024",
     phase: "System Builder",
     description:
-      "Led product, product operations, and organizational transformation work. Designed and implemented product operating models — unifying how teams learn, build, and deliver across the organization.",
+      "Led product, product operations, and organizational transformation work. Designed and implemented product operating models, unifying how teams learn, build, and deliver across the organization.",
     learned:
       "That the system an organization runs on is itself a product. It can be designed, built, and continuously improved. Most organizations never treat it that way.",
   },
