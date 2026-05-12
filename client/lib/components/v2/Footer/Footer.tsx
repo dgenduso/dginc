@@ -5,8 +5,12 @@ import styles from "./Footer.module.css";
 const links = [
   { label: "About", href: "/about" },
   { label: "Thoughts", href: "/thoughts" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/dangenduso", external: true },
-  { label: "GitHub", href: "https://github.com/dangenduso", external: true },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/dgenduso",
+    external: true,
+  },
+  // { label: "GitHub", href: "https://github.com/dangenduso", external: true },
 ];
 
 export default function Footer() {
@@ -26,7 +30,9 @@ export default function Footer() {
                 key={l.href}
                 href={l.href}
                 className={styles.link}
-                {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                {...(l.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
               >
                 {l.label}
               </a>
