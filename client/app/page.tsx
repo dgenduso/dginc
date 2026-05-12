@@ -1,21 +1,22 @@
-import LandingHero from "@/lib/components/landingPage/landingHero/LandingHero";
-import LandingProblem from "@/lib/components/landingPage/landingProblem/LandingProblem";
-import LandingMisdiagnosis from "@/lib/components/landingPage/landingMisdiagnosis/LandingMisdiagnosis";
-import LandingRootCause from "@/lib/components/landingPage/landingRootCause/LandingRootCause";
-import LandingLearnFirst from "@/lib/components/landingPage/landingLearnFirst/LandingLearnFirst";
-import LandingInsight from "@/lib/components/landingPage/landingInsight/LandingInsight";
-import LandingFinalCTA from "@/lib/components/landingPage/landingFinalCTA/LandingFinalCTA";
+import Nav from "@/lib/components/v2/Nav/Nav";
+import Hero from "@/lib/components/v2/Hero/Hero";
+import BuilderProfile from "@/lib/components/v2/BuilderProfile/BuilderProfile";
+import BuildLevels from "@/lib/components/v2/BuildLevels/BuildLevels";
+import Projects from "@/lib/components/v2/Projects/Projects";
+import Thinking from "@/lib/components/v2/Thinking/Thinking";
+import Footer from "@/lib/components/v2/Footer/Footer";
+import "./v2.css";
 
 export default function Home() {
   return (
-    <>
-      <LandingHero />
-      <LandingProblem />
-      <LandingMisdiagnosis />
-      <LandingRootCause />
-      <LandingLearnFirst />
-      <LandingInsight />
-      <LandingFinalCTA />
-    </>
+    <div data-page="v2">
+      <Nav />
+      <Hero />
+      <BuilderProfile />
+      <BuildLevels />
+      <Projects activeDimension={null} preview />
+      <Thinking preview />
+      <Footer />
+    </div>
   );
 }

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, DM_Sans } from "next/font/google";
-import Navbar from "@/lib/components/navigation/Navbar/Navbar";
-import Footer from "@/lib/components/navigation/Footer/Footer";
 import { SectorProvider } from "@/lib/sectors/SectorContext";
 import "./globals.css";
 
@@ -54,9 +52,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${dmSans.variable}`}>
       <body>
         <SectorProvider>
-          <Navbar />
           {children}
-          <Footer />
         </SectorProvider>
       </body>
     </html>

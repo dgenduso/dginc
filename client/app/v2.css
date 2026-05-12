@@ -1,0 +1,22 @@
+/* V2 design tokens — scoped to [data-page="v2"] */
+[data-page="v2"] {
+  --v2-bg: #0a0a0f;
+  --v2-bg-raised: #12121a;
+  --v2-bg-card: #16161f;
+  --v2-border: rgba(255, 255, 255, 0.08);
+  --v2-border-hover: rgba(255, 255, 255, 0.16);
+  --v2-fg: #f0f0f0;
+  --v2-fg-muted: #7a7a8a;
+  --v2-fg-subtle: #3a3a4a;
+
+  /* Four dimension colors */
+  --dim-people: #E8923A;
+  --dim-process: #4A90E2;
+  --dim-policy: #9B6DD4;
+  --dim-product: #2BB5A0;
+
+  --dim-people-bg: rgba(232, 146, 58, 0.1);
+  --dim-process-bg: rgba(74, 144, 226, 0.1);
+  --dim-policy-bg: rgba(155, 109, 212, 0.1);
+  --dim-product-bg: rgba(43, 181, 160, 0.1);
+}

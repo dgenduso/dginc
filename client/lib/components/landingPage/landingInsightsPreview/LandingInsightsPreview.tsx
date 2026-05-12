@@ -1,5 +1,5 @@
 import { getPosts } from "@/lib/ghost";
-import InsightsCard from "@/lib/components/insightsPage/InsightsCard/InsightsCard";
+import InsightsCard from "@/lib/components/thoughtsPage/InsightsCard/InsightsCard";
 import styles from "./LandingInsightsPreview.module.css";
 
 export default async function LandingInsightsPreview() {
@@ -30,7 +30,7 @@ export default async function LandingInsightsPreview() {
         )}
 
         <div className={styles.footer}>
-          <a href="/insights" className={styles.ctaLink}>
+          <a href="/thoughts" className={styles.ctaLink}>
             View All Insights
           </a>
         </div>

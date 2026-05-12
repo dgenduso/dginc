@@ -1,0 +1,208 @@
+.section {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 1.5rem 5rem;
+  background: var(--v2-bg);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ── Copy ── */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--v2-fg-muted);
+  margin-bottom: 1.25rem;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--v2-fg);
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rotatingWord {
+  color: var(--dim-policy);
+  transition: opacity 350ms ease;
+  opacity: 1;
+}
+
+.rotatingWordFade {
+  opacity: 0;
+}
+
+.builderWord {
+  color: var(--v2-fg);
+}
+
+.subheadline {
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--v2-fg);
+  font-weight: 500;
+  max-width: 540px;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+
+/* ── Credentials ── */
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--v2-border);
+}
+
+.credentialsEyebrow {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--dim-policy);
+  font-variant-numeric: tabular-nums;
+}
+
+.credentialRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+}
+
+.credential {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.credentialNum {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--v2-fg);
+}
+
+.credentialLabel {
+  font-size: 0.72rem;
+  color: var(--v2-fg-muted);
+  line-height: 1.4;
+  max-width: 110px;
+}
+
+/* ── CTAs ── */
+.ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--v2-fg);
+  color: var(--v2-bg);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+
+.ctaPrimary:hover { opacity: 0.85; }
+
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: var(--v2-fg-muted);
+  border: 1px solid var(--v2-border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.ctaSecondary:hover {
+  color: var(--v2-fg);
+  border-color: var(--v2-border-hover);
+}
+
+/* ── Photo ── */
+.photoWrap {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.photoMounted {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.photoRing {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--v2-border-hover);
+  box-shadow: 0 0 0 6px rgba(155, 109, 212, 0.12), 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+
+/* ── Desktop: side by side ── */
+@media (min-width: 900px) {
+  .inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .photoWrap {
+    flex-shrink: 0;
+  }
+
+  .photoRing {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .photoRing {
+    width: 360px;
+    height: 360px;
+  }
+}

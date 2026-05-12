@@ -1,0 +1,141 @@
+.section {
+  padding: 7rem 1.5rem;
+  background: var(--v2-bg);
+  border-top: 1px solid var(--v2-border);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--v2-fg-muted);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.25rem, 2.8vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--v2-fg);
+  max-width: 680px;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  line-height: 1.75;
+  color: var(--v2-fg-muted);
+  max-width: 620px;
+}
+
+/* ── Levels ── */
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--v2-border);
+  border: 1px solid var(--v2-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.level {
+  display: flex;
+  gap: 0;
+  background: var(--v2-bg-raised);
+  transition: background 0.2s ease;
+  position: relative;
+}
+
+.level::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.level:hover {
+  background: var(--v2-bg-raised);
+}
+
+.level:hover::before {
+  opacity: 1;
+}
+
+.levelLeft {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 1.5rem 2rem 2rem;
+  flex-shrink: 0;
+}
+
+.levelNumber {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  opacity: 0.7;
+}
+
+.levelRight {
+  padding: 2rem 2rem 2rem 0;
+  flex: 1;
+}
+
+.levelSubtitle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--v2-fg-muted);
+  margin-bottom: 0.5rem;
+}
+
+.levelName {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--v2-fg);
+  margin-bottom: 0.75rem;
+}
+
+.levelBody {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--v2-fg-muted);
+  max-width: 640px;
+}
+
+/* ── Desktop: wider number column ── */
+@media (min-width: 768px) {
+  .levelLeft {
+    width: 80px;
+    padding: 2.5rem 1.5rem 2.5rem 2.5rem;
+    justify-content: center;
+  }
+
+  .levelRight {
+    padding: 2.5rem 2.5rem 2.5rem 0;
+  }
+
+  .levelNumber {
+    font-size: 0.8rem;
+  }
+}

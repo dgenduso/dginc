@@ -7,7 +7,7 @@ export default function ArticleHeader({ post }: { post: GhostPost }) {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link href="/insights" className={styles.back}>
+        <Link href="/thoughts" className={styles.back}>
           ← All Insights
         </Link>
 

@@ -5,7 +5,7 @@ import styles from "./InsightsCard.module.css";
 
 export default function InsightsCard({ post }: { post: GhostPost }) {
   return (
-    <Link href={`/insights/${post.slug}`} className={styles.card}>
+    <Link href={`/thoughts/${post.slug}`} className={styles.card}>
       {post.feature_image && (
         <div className={styles.imageWrapper}>
           <Image

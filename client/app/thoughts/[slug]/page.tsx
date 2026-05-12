@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPosts, getPostBySlug } from "@/lib/ghost";
-import ArticleHeader from "@/lib/components/articlePage/ArticleHeader/ArticleHeader";
-import ArticleBody from "@/lib/components/articlePage/ArticleBody/ArticleBody";
+import Nav from "@/lib/components/v2/Nav/Nav";
+import Footer from "@/lib/components/v2/Footer/Footer";
+import Article from "@/lib/components/v2/Article/Article";
+import "../../v2.css";
 
 export async function generateStaticParams() {
-  const posts = await getPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+  try {
+    const posts = await getPosts();
+    return posts.map((post) => ({ slug: post.slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata(
-  props: PageProps<"/insights/[slug]">
+  props: PageProps<"/thoughts/[slug]">
 ): Promise<Metadata> {
   const { slug } = await props.params;
   const post = await getPostBySlug(slug);
@@ -25,25 +31,20 @@ export async function generateMetadata(
       publishedTime: post.published_at,
       ...(post.feature_image && { images: [{ url: post.feature_image }] }),
     },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
-      ...(post.feature_image && { images: [post.feature_image] }),
-    },
   };
 }
 
-export default async function ArticlePage(props: PageProps<"/insights/[slug]">) {
+export default async function ArticlePage(props: PageProps<"/thoughts/[slug]">) {
   const { slug } = await props.params;
   const post = await getPostBySlug(slug);
 
   if (!post) notFound();
 
   return (
-    <>
-      <ArticleHeader post={post} />
-      <ArticleBody html={post.html} />
-    </>
+    <div data-page="v2">
+      <Nav />
+      <Article post={post} />
+      <Footer />
+    </div>
   );
 }

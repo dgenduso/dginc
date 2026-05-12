@@ -1,28 +1,20 @@
 import type { Metadata } from "next";
-import AboutHero from "@/lib/components/aboutPage/AboutHero/AboutHero";
-import AboutWhyThisWork from "@/lib/components/aboutPage/AboutWhyThisWork/AboutWhyThisWork";
-import AboutDifferentFirm from "@/lib/components/aboutPage/AboutDifferentFirm/AboutDifferentFirm";
-import AboutPrinciples from "@/lib/components/aboutPage/AboutPrinciples/AboutPrinciples";
-import AboutIdentityCapabilities from "@/lib/components/aboutPage/AboutIdentityCapabilities/AboutIdentityCapabilities";
-import AboutFutureOfFirm from "@/lib/components/aboutPage/AboutFutureOfFirm/AboutFutureOfFirm";
-import AboutCTA from "@/lib/components/aboutPage/AboutCTA/AboutCTA";
+import Nav from "@/lib/components/v2/Nav/Nav";
+import About from "@/lib/components/v2/About/About";
+import Footer from "@/lib/components/v2/Footer/Footer";
+import "../v2.css";
 
 export const metadata: Metadata = {
   title: "About — Dan Genduso",
-  description:
-    "Learn about Dan Genduso and the work of helping organizations transform into continuous learning systems.",
+  description: "Systems thinker, builder, and organizational innovator based in San Francisco.",
 };
 
 export default function AboutPage() {
   return (
-    <>
-      <AboutHero />
-      <AboutWhyThisWork />
-      <AboutDifferentFirm />
-      <AboutPrinciples />
-      <AboutIdentityCapabilities />
-      <AboutFutureOfFirm />
-      <AboutCTA />
-    </>
+    <div data-page="v2">
+      <Nav />
+      <About />
+      <Footer />
+    </div>
   );
 }

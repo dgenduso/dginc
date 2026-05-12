@@ -8,7 +8,7 @@ import { useTheme } from "@/lib/hooks/useTheme";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
-  { label: "Insights", href: "/insights" },
+  { label: "Thoughts", href: "/thoughts" },
   { label: "About", href: "/about" },
 ];
 
