@@ -142,7 +142,7 @@ export const timeline: TimelineEntry[] = [
       "That understanding how something gets built changes how you think about what to build. The best product decisions come from people who can see both sides. Start simple, launch, learn, and improve.",
   },
   {
-    period: "2016 — 2018",
+    period: "2015 — 2018",
     phase: "Capability Builder",
     description:
       "Focused on building organizational capabilities across people, process, policy, and product. Defined governance models, designed processes, identified role gaps, and managed change across large-scale platform transformations.",
@@ -150,19 +150,19 @@ export const timeline: TimelineEntry[] = [
       "That technology is rarely the hard part. The hard part is getting people, process, and policy aligned around it. Change only sticks when all four dimensions move together.",
   },
   {
-    period: "2014 — 2016",
-    phase: "Product Deliverer",
+    period: "2010 — 2018",
+    phase: "Product Manager",
     description:
-      "Moved into product ownership and scrum-based delivery. Worked directly with engineering teams to ship features, manage backlogs, and continuously improve products through iterative cycles.",
+      "Customer and market discovery, writing PRDs and BRDs, defining product vision and roadmap, product ownership, and scrum-based iterative delivery. Worked directly with engineering teams to prioritize backlogs, write user stories, and continuously ship and improve products.",
     learned:
-      "How to ship. How to work with engineers, break work into the right pieces, and keep a team moving without losing sight of what actually matters to the customer.",
+      "How to own a product end to end — from understanding what customers actually need to getting it built, shipped, and improved. That the best product decisions come from staying close to the customer throughout, not just at the start.",
   },
   {
-    period: "2010 — 2014",
-    phase: "Digital Transformer",
+    period: "2010 — 2018",
+    phase: "Project Manager",
     description:
-      "Started in business analysis, PMO, and early product management. Stakeholder interviews, requirements gathering, BRDs and PRDs, build vs. buy analysis, competitive analysis, and program management for large-scale CRM and customer engagement platform rollouts.",
+      "Digital transformation program management, IT project management, and Scrum Master across large-scale platform rollouts including CRM, customer engagement, and marketing technology. Process design, stakeholder management, requirements gathering, and managing delivery across cross-functional teams.",
     learned:
-      "How organizations actually work and why they resist change. How to define work and move it through a system. How to have learning conversations and lead executive discussions.",
+      "How organizations actually move work through a system — and why they struggle to. How to run structured discovery, facilitate executive conversations, and keep complex programs on track across competing priorities.",
   },
 ];
