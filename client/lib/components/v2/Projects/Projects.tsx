@@ -68,6 +68,16 @@ export default function Projects({
                 {isOpen && (
                   <div className={styles.cardDetail}>
                     <p className={styles.cardDetailBody}>{project.detail}</p>
+                    {project.url && (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.cardLink}
+                      >
+                        Visit site →
+                      </a>
+                    )}
                   </div>
                 )}
               </div>

@@ -152,6 +152,18 @@
   margin-bottom: 1.25rem;
 }
 
+.cardLink {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--dim-product);
+  transition: opacity 0.15s ease;
+}
+
+.cardLink:hover {
+  opacity: 0.75;
+}
+
 .cardTags {
   display: flex;
   flex-wrap: wrap;
