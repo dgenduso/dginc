@@ -6,7 +6,7 @@ import "../v2.css";
 
 export const metadata: Metadata = {
   title: "About — Dan Genduso",
-  description: "Systems thinker, builder, and organizational innovator based in San Francisco.",
+  description: "I help organizations become AI-native. 15 years of depth across organizational design, product, and engineering.",
 };
 
 export default function AboutPage() {

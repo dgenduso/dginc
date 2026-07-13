@@ -68,22 +68,22 @@ export const projects: Project[] = [
     dims: ["people", "process", "policy", "product"],
     philosophy: "City as a product.",
     summary:
-      "A platform for residents to govern, organize, and build their local communities together, starting at the block level.",
+      "A platform for residents to form trusted hyperlocal communities starting at the building and block level — and for cities to learn from those communities continuously.",
     detail:
-      "Block communities as the activation mechanism, growing into a full city-building platform: events, ranked-choice voting, fundraising, permits, shared decision-making. Built on the belief that cities improve when residents have real infrastructure to build together.",
-    tags: ["Build Your Block", "Civic Tech", "Community Platform"],
+      "Built on the same AI-native capability model I bring into organizations. Block communities as the activation mechanism, growing into a full city-building platform: events, ranked-choice voting, fundraising, permits, shared decision-making.",
+    tags: ["Civic Tech", "Community Platform", "AI-Native"],
     url: "https://www.diverseciti.org",
   },
   {
     title: "APOLLO1 (A1)",
     status: "Active",
     dims: ["people", "process", "product"],
-    philosophy: "Relationship as a product.",
+    philosophy: "The AI-native operating system.",
     summary:
-      "An innovation and relationship platform. Learn from customers, build with them, and grow trusted relationships in the process.",
+      "The platform through which AI-native capabilities are built, deployed, and operated. Agents live here. Process and policy are codified here.",
     detail:
-      "A ground-up rethinking of how organizations build customer relationships. Built on the premise that the best products and services are built alongside the customers they serve, with the customer as a genuine partner and not just a source of feedback.",
-    tags: ["Build With Customers", "AI OS", "Learning Platform"],
+      "The system that makes AI-native transformation repeatable at scale. A ground-up rethinking of how organizations build and operate capabilities, with agents holding defined roles and people equipped for sensemaking, teaching, and governance.",
+    tags: ["AI OS", "Learning Platform", "Agentic"],
     url: "https://www.apoll01.com",
   },
   {
@@ -122,51 +122,43 @@ export interface TimelineEntry {
 
 export const timeline: TimelineEntry[] = [
   {
-    period: "2024 — Present",
+    period: "2023 — Present",
     phase: "AI Builder",
     description:
-      "Built my own operating system — the methodology, frameworks, and tools that enable me to go into an organization and build capability systems and products. AI is the multiplier that makes one person able to do what previously required a team. Currently applying that OS to build DiverseCiti and APOLLO1, and to help organizations move to an AI-native operating model.",
+      "Building AI-native products and the operating system for building AI-native capabilities as products. APOLLO1 has evolved into the platform through which AI-native capabilities are designed, delivered, and operated. Applying everything from the previous phases — capability design, product engineering, operating model thinking — with AI as the new foundational layer. Also applying this directly to client organizations as a Fractional CAIO.",
     learned:
-      "The bottleneck is no longer capability. It is clarity. With AI, the limiting factor is how well you understand the problem, not how many people you have to work on it.",
+      "The bottleneck is no longer capability or headcount. It is clarity. With AI, the limiting factor is how well you understand the problem — not how many people you have to work on it. One person with agents and the right depth can lead transformation at a scale that previously required a large team.",
   },
   {
-    period: "2021 — Present",
+    period: "2021 — 2023",
     phase: "System Builder",
     description:
-      "Moved from building individual capability systems to building the organizational operating system across a global organization — the system across capabilities that defines how an org learns, builds, and improves continuously. Designed and implemented operating models across functions, connecting how teams learn from customers to how they decide, build, and deliver.",
+      "Moved from building individual capabilities to designing the operating model that builds all capabilities continuously — the system that defines how an organization learns, decides, builds, and improves. Designed and implemented product operating models across a global organization, connecting customer learning to capability delivery across functions. This was the shift from building one thing well to designing the system that builds everything well.",
     learned:
-      "The organizational operating system is itself a product. Most organizations inherited theirs and never designed it intentionally. When you treat it like a product and improve it continuously, the org's ability to build and serve compounds over time.",
+      "The organizational operating model is itself a product — and most organizations inherited theirs without ever designing it intentionally. When you treat it as something to be built and continuously improved, the organization's ability to deliver compounds over time.",
   },
   {
-    period: "2018 — Present",
+    period: "2018 — 2021",
     phase: "Product Builder",
     description:
-      "Learned to code. Started building products end-to-end, from architecture to deployment. Worked on APOLL01. Closed the gap between knowing what to build and being able to build it myself.",
+      "Learned to code. Shifted from building capabilities inside organizations to building my own products end-to-end — architecture, engineering, deployment. Started APOLLO1. Closed the gap between knowing what to build and being able to build it myself. This phase was about becoming a complete builder: someone who could own the full technical stack, not just the strategy and design.",
     learned:
-      "That understanding how something gets built changes how you think about what to build. The best product decisions come from people who can see both sides. Start simple, launch, learn, and improve.",
+      "Understanding how something gets built fundamentally changes how you think about what to build. The best product decisions come from people who can see both sides of that line. Start simple, ship, learn, and improve — the loop matters more than the plan.",
   },
   {
-    period: "2015 — 2018",
+    period: "2012 — 2018",
     phase: "Capability Builder",
     description:
-      "Built and improved specific capabilities within organizations — each one designed across people, process, policy, and technology. A capability is not a tool or a role. It is a system built across all four dimensions that enables the organization to do something it couldn't do before, or do it better. Built capabilities across CRM, knowledge management, marketing operations, and customer engagement.",
+      "Grew from contributing to capabilities to owning them end to end. Started with the technical builds — designing and delivering the product and technology dimension of CRM and marketing operations capabilities. Then expanded to own the full capability across all four dimensions: the process design, the policy and governance, the people and change strategy, and the technology. Running the full 5 Ds — Discover, Diagnose, Define, Design, Deliver — to redesign capabilities from the ground up rather than just improving what existed.",
     learned:
-      "Every capability is its own system. You can't fix the technology without fixing the process. You can't fix the process without addressing the people and policy around it. Change only sticks when all four dimensions move together.",
+      "A capability is not a tool, a role, or a process in isolation. It is a system built across all four dimensions — people, process, policy, and technology — and change only sticks when all four move together. You can't fix the technology without fixing the process. You can't fix the process without addressing the governance and the people around it.",
   },
   {
-    period: "2010 — 2018",
-    phase: "Product Manager",
+    period: "2010 — 2012",
+    phase: "Capability Specialist",
     description:
-      "Customer and market discovery, writing PRDs and BRDs, defining product vision and roadmap, product ownership, and scrum-based iterative delivery. Worked directly with engineering teams to prioritize backlogs, write user stories, and continuously ship and improve products. Ran the full product lifecycle from understanding what customers actually need to getting it built, shipped, and improved.",
+      "Started in CRM and marketing operations — specialized capability domains that required working across people, process, and technology simultaneously. The work included process design, technical implementation, program management, and change management and readiness on the people side. Not yet owning capabilities end to end, but learning what it took to make change stick inside complex organizations through the full arc of a capability build.",
     learned:
-      "That the best product decisions come from staying close to the customer throughout the build, not just at the start. And that owning a product means owning the outcomes, not just the backlog.",
-  },
-  {
-    period: "2010 — 2018",
-    phase: "Project Manager",
-    description:
-      "Digital transformation program management, IT project management, and Scrum Master across large-scale platform rollouts including CRM, customer engagement, and marketing technology. Process design, stakeholder management, requirements gathering, and coordinating delivery across cross-functional teams.",
-    learned:
-      "How organizations actually move work through a system and why they struggle to. How to run structured discovery, facilitate executive conversations, and keep complex programs on track across competing priorities.",
+      "Organizations resist change not because people are opposed to improvement but because change that touches only one dimension — just the technology, just the process — doesn't hold. The work that sticks is the work that accounts for how people actually experience the change.",
   },
 ];

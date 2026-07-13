@@ -26,9 +26,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dan Genduso — AI & Organizational Transformation",
+  title: "Dan Genduso — AI-Native Transformation",
   description:
-    "Helping city governments and organizations use AI to learn deeply from those they serve — and build the outcomes they actually want.",
+    "I help organizations become AI-native — rebuilding capabilities with AI Agents operating as a digital workforce, unified inside products that combine process, policy, and technology.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
   ),

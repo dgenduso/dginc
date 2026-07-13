@@ -28,7 +28,7 @@ export default async function Thinking({ preview = false }: ThinkingProps) {
       <div className={styles.inner}>
         <div className={styles.header}>
           <p className={styles.label}>Thoughts</p>
-          <h2 className={styles.heading}>The thinking behind my work.</h2>
+          <h2 className={styles.heading}>The thinking behind the work.</h2>
         </div>
 
         <ul className={styles.list}>
