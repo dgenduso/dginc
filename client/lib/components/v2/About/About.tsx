@@ -18,6 +18,24 @@ export default function About() {
                 redesigning how organizations work. AI-native transformation is
                 where that work leads now.
               </p>
+              <div className={styles.credentials}>
+                <div className={styles.credential}>
+                  <span className={styles.credentialNum}>10+</span>
+                  <span className={styles.credentialLabel}>Years product management</span>
+                </div>
+                <div className={styles.credential}>
+                  <span className={styles.credentialNum}>10+</span>
+                  <span className={styles.credentialLabel}>Years delivery &amp; operations</span>
+                </div>
+                <div className={styles.credential}>
+                  <span className={styles.credentialNum}>6+</span>
+                  <span className={styles.credentialLabel}>Years engineering &amp; architecture</span>
+                </div>
+                <div className={styles.credential}>
+                  <span className={styles.credentialNum}>2+</span>
+                  <span className={styles.credentialLabel}>Years building with AI</span>
+                </div>
+              </div>
             </div>
             <div className={styles.heroPhoto}>
               <div className={styles.photoRing}>
