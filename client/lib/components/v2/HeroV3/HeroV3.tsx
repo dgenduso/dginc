@@ -18,7 +18,7 @@ export default function HeroV3() {
     <section className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <p className={styles.eyebrow}>AI & Organizational Transformation</p>
+          <p className={styles.eyebrow}>AI-Native Transformation</p>
           <h1 className={styles.headline}>
             Helping organizations become AI-native.
           </h1>
