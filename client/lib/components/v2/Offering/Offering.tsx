@@ -1,70 +1,75 @@
+"use client";
+
+import { useState } from "react";
+import dynamic from "next/dynamic";
 import CalendlyButton from "@/lib/components/calendly/CalendlyButton";
 import styles from "./Offering.module.css";
+
+const InnovationCycleModal = dynamic(
+  () => import("@/lib/components/v2/InnovationCycleModal/InnovationCycleModal"),
+  { ssr: false }
+);
 
 const steps = [
   {
     number: "01",
-    name: "Assess & Discover",
-    body: "We deploy agents inside your organization to conduct structured interviews with your team — async, on their schedule, across every function and time zone. I follow up person-to-person where the conversation requires it. The output is a clear picture of current state: where the friction is, what's breaking down, where coordination overhead lives, and what your people actually need.",
+    name: "Align",
+    body: "A structured multi-day workshop with leaders across your organization. We gather inputs on identity, values, current state, and vision — aligning everyone on what AI-native means for your org and what you're working toward. The output is the shared foundation we need to provision the operating system for your organization.",
+    cta: null,
   },
   {
     number: "02",
-    name: "Diagnose & Define",
-    body: "We synthesize what the assessment surfaces — pain points, gaps, underlying causes — and diagnose what's actually driving them. From there we define the roadmap: a prioritized set of opportunities and the path forward. That might be a new AI-native capability, an operating model build, leadership alignment, or some combination. The assessment determines it, not a predetermined service offering.",
+    name: "Learn",
+    body: "We deploy the platform inside your organization with an initial set of forward-deployed agents. Those agents learn from your people through conversation — continuously, across functions and time zones, on their schedule. That learning feeds directly into the innovation process, surfacing what jobs need to be done, what gaps exist, and what to build next.",
+    cta: null,
   },
   {
     number: "03",
-    name: "Design & Deliver",
-    body: "We design and deliver what the roadmap calls for. For capability-building work, that means a unified product — process, policy, and agents built in — that the organization can own and continuously improve. For operating model work, that means standing up the system that makes AI-native capability delivery repeatable. For alignment work, that means getting leadership and teams to a shared, grounded vision of what AI-native means for their organization.",
+    name: "Innovate",
+    body: "Learning surfaces signals. Signals kick off innovation cycles. Each cycle moves through the 5 Ds — adding a new Job to the system, closing a gap, or evolving an existing agent. Every delivery feeds back into learning, and the loop continues.",
+    cta: "See the innovation cycle →",
   },
 ];
 
 export default function Offering() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
-    <section id="offering" className={styles.section}>
-      <div className={styles.inner}>
-        <div className={styles.header}>
-          <p className={styles.label}>How an engagement works</p>
-          <h2 className={styles.heading}>Every engagement starts with understanding where you are.</h2>
-          <p className={styles.subheading}>
-            We don&apos;t start with a predetermined solution. We start by deploying agents into your organization to learn what&apos;s actually going on — then we figure out together what needs to be built.
-          </p>
-        </div>
-
-        <div className={styles.phases}>
-          {steps.map((step) => (
-            <div key={step.number} className={styles.phase}>
-              <div className={styles.phaseLeft}>
-                <span className={styles.phaseNumber}>{step.number}</span>
-              </div>
-              <div className={styles.phaseRight}>
-                <h3 className={styles.phaseName}>{step.name}</h3>
-                <p className={styles.phaseBody}>{step.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className={styles.paths}>
-          <p className={styles.pathsLabel}>Where engagements typically lead</p>
-          <div className={styles.pathGrid}>
-            <div className={styles.pathCard}>
-              <p className={styles.pathName}>AI-Native Capability Building</p>
-              <p className={styles.pathBody}>Design and deliver a specific organizational capability as an AI-native product — agents, process, and policy built in.</p>
-            </div>
-            <div className={styles.pathCard}>
-              <p className={styles.pathName}>Product Operating Model</p>
-              <p className={styles.pathBody}>Stand up the system that enables your organization to build and manage AI-native capabilities continuously.</p>
-            </div>
-            <div className={styles.pathCard}>
-              <p className={styles.pathName}>AI Vision & Alignment</p>
-              <p className={styles.pathBody}>Get your senior leaders and teams to a shared, grounded understanding of what AI-native means for your organization — and what it takes to get there.</p>
-            </div>
+    <>
+      <section id="offering" className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.header}>
+            <p className={styles.label}>How an engagement works</p>
+            <h2 className={styles.heading}>Align. Learn. Innovate.</h2>
+            <p className={styles.subheading}>
+              Every engagement follows the same arc — align the organization, deploy the platform to learn from your people, then continuously innovate through a repeating cycle that builds and evolves the operating system over time.
+            </p>
           </div>
-        </div>
 
-        <CalendlyButton label="Let's Chat" className={styles.cta} />
-      </div>
-    </section>
+          <div className={styles.phases}>
+            {steps.map((step) => (
+              <div key={step.number} className={styles.phase}>
+                <div className={styles.phaseLeft}>
+                  <span className={styles.phaseNumber}>{step.number}</span>
+                </div>
+                <div className={styles.phaseRight}>
+                  <h3 className={styles.phaseName}>{step.name}</h3>
+                  <p className={styles.phaseBody}>{step.body}</p>
+                  {step.cta && (
+                    <button className={styles.readMore} onClick={() => setModalOpen(true)}>
+                      {step.cta}
+                    </button>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <CalendlyButton label="Let's Chat" className={styles.cta} />
+        </div>
+      </section>
+
+      {modalOpen && <InnovationCycleModal onClose={() => setModalOpen(false)} />}
+    </>
   );
 }

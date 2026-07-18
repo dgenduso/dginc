@@ -23,10 +23,9 @@ export default function HeroV3() {
             Helping organizations become AI-native.
           </h1>
           <p className={styles.subheadline}>
-            That means rebuilding capabilities with AI Agents operating as a
-            digital workforce alongside humans — process, policy, and agent
-            roles unified inside a single product — so people are freed to focus
-            on what only humans can do.
+            That means redesigning how your organization operates across people,
+            process, policy, and product — so a digital workforce can operate
+            alongside humans, and the focus shifts to what only humans can do.
           </p>
 
           <div className={styles.ctas}>

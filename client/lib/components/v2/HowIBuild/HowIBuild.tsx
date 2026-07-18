@@ -12,22 +12,22 @@ const OpportunityModal = dynamic(
 const cards = [
   {
     number: "01",
-    name: "A redesign, not a retrofit",
-    body: "Most AI implementations fit AI into an existing capability design. That design limits what AI can do — the agent can only reach the sliver of the process it can see. AI-native capability building starts from purpose and redesigns the capability from the ground up so AI can hold the full thing.",
+    name: "The operating model becomes an operating system",
+    body: "Most organizations have never consciously designed how they operate — it accumulated over time. AI-native transformation means redesigning it intentionally: an operating system where agents hold roles, process and policy are built in, and the organization can continuously evolve how it works.",
     accent: "var(--dim-policy)",
     accentBg: "var(--dim-policy-bg)",
   },
   {
     number: "02",
-    name: "The 4 Ps collapse into one product",
-    body: "Process, policy, people's roles, and technology are no longer four separate concerns designed in parallel. In an AI-native capability they collapse into one unified product — built once, improved continuously, and operated by agents and people together.",
+    name: "Agents take on roles. People shift to what only humans can do.",
+    body: "As agents are assigned Jobs and take on responsibilities, the human role shifts — from doing the work to learning, governing, and building trusted relationships. The organization doesn't shrink. It becomes more intentionally human where it matters most.",
     accent: "var(--dim-people)",
     accentBg: "var(--dim-people-bg)",
   },
   {
     number: "03",
-    name: "People get elevated, not replaced",
-    body: "When agents hold the machine-like work — the coordination, the data entry, the handoffs — people shift into sensemaking, teaching, and governance. The human role doesn't shrink. It becomes more human.",
+    name: "Everything the agent needs to do the job lives in the system",
+    body: "For an agent to do a Job effectively and consistently, the organization has to make explicit what was always tacit: end-to-end processes, policies and standards, knowledge articles, job instructions, and the values and identity the agent is meant to embody. That work — building it all into the system — is the transformation.",
     accent: "var(--dim-product)",
     accentBg: "var(--dim-product-bg)",
   },
