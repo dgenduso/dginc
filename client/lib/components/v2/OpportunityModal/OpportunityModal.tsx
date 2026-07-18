@@ -31,35 +31,35 @@ export default function OpportunityModal({ onClose }: OpportunityModalProps) {
 
         <div className={styles.content}>
           <p className={styles.label}>The full picture</p>
-          <h2 className={styles.heading}>Why this shift is different from the ones before it.</h2>
+          <h2 className={styles.heading}>Every wave forced a redesign. AI is no different — except this time, the redesign is the operating model itself.</h2>
 
           <p className={styles.body}>
-            When the internet emerged, organizations didn&apos;t replace themselves — they added to themselves. IT departments grew. Product teams were built. Digital transformation offices were created to bridge the gap between the business and its digital presence. The org design bifurcated: the core business on one side, the digital team on the other, coordinating across a gap that never fully closed.
+            When the internet emerged, organizations had to redesign themselves as digital organizations — websites, e-commerce, digital products. IT departments grew. Digital transformation offices were created. The org bifurcated: the core business on one side, the digital team on the other, coordinating across a gap that never fully closed.
           </p>
           <p className={styles.body}>
-            Mobile did the same thing. New teams formed — mobile engineers, app designers, cross-platform coordinators — layered on top of the web teams that were already layered on top of the core business. Each shift added a new structure without changing the underlying one. The organization grew more complex with every wave.
+            Mobile forced another redesign. New teams formed — mobile engineers, app designers, cross-platform leads — layered on top of the web teams already layered on top of the core business. Each wave added new structure without changing the underlying one.
           </p>
           <p className={styles.body}>
-            AI is a different kind of shift. It doesn&apos;t add a new team or a new interface. It requires rethinking what the organization is — how it&apos;s designed, how people work within it, what they focus on, and what the organization itself is for.
-          </p>
-
-          <h3 className={styles.subheading}>From pushing to pulling</h3>
-          <p className={styles.body}>
-            Most organizations are designed around pushing. Selling. Broadcasting. Executing against a plan. The information that comes back from customers — the signals that would tell you what to build next, what&apos;s not working, what people actually need — gets lost. It disappears into conversations that never get recorded, CRM notes that never get read, feedback loops that never close.
-          </p>
-          <p className={styles.body}>
-            An AI-native organization is designed around the opposite: pulling. Learning from customers continuously. Getting information into the system in a form that agents can actually use. Building the relationship between the organization and the people it serves into the product itself — so that every interaction generates intelligence, and that intelligence drives what gets built next.
-          </p>
-          <p className={styles.body}>
-            That&apos;s a fundamentally different organizational purpose. Not just more efficient operations — a different relationship with the people you serve, made possible by building the organization around learning rather than broadcasting.
+            AI is different. It doesn&apos;t add a new channel or a new interface. It forces organizations to redesign how they operate — to transform the operating model into an operating system that runs a digital workforce alongside people.
           </p>
 
-          <h3 className={styles.subheading}>What changes internally</h3>
+          <h3 className={styles.subheading}>The operating model becomes an operating system</h3>
           <p className={styles.body}>
-            The complex tangle of SaaS tools employees navigate every day — each with its own interface, its own data model, its own way of doing things — gets redesigned into something coherent: an operating system where agents hold roles, process and policy are built in, and people focus on what requires human judgment. Coordination overhead drops. The organization becomes capable of continuously evolving what it delivers, rather than executing against a fixed plan until the next transformation project begins.
+            A digital workforce changes what an organization needs to be. Agents don&apos;t coordinate through hallway conversations or institutional memory. They need roles with clear scope, processes that are documented and structured, policies that are explicit and accessible, and governance over how and when they act. The organization has to become the kind of place that can define and maintain all of that — continuously.
           </p>
           <p className={styles.body}>
-            That internal transformation is what makes the external experience improve — not as a one-time initiative, but continuously, as a byproduct of how the organization is built.
+            Most organizations aren&apos;t there. Job descriptions haven&apos;t been meaningfully updated in years. How-to knowledge lives in people&apos;s heads, passed down through onboarding and coaching that was never written down because there was always more pressing work to do. Processes exist as slides from a project that ended. The focus was always on getting work done — not on documenting how the work gets done.
+          </p>
+          <p className={styles.body}>
+            A new employee can absorb that tacit knowledge over time. An agent cannot. It needs the knowledge to already be explicit, structured, and maintained. That gap — between how organizations actually operate and what a digital workforce needs to function — is the real transformation challenge.
+          </p>
+
+          <h3 className={styles.subheading}>The opportunity</h3>
+          <p className={styles.body}>
+            Closing that gap isn&apos;t just an IT project or an AI implementation. It&apos;s an organizational redesign — building the operating system that makes a digital workforce possible. That means surfacing what was always tacit, structuring what was always informal, and governing what was never governed before.
+          </p>
+          <p className={styles.body}>
+            The organizations that do this well don&apos;t just add AI to what they already do. They build something fundamentally different: an organization designed to operate with a digital workforce, continuously learn from it, and improve.
           </p>
         </div>
       </div>

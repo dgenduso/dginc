@@ -43,19 +43,19 @@ export default function HowIBuild() {
           <div className={styles.distinction}>
             <p className={styles.label}>The opportunity</p>
             <h2 className={styles.heading}>
-              AI doesn&apos;t change how your organization works. It changes what your organization is.
+              It&apos;s time to redesign how your organization operates.
             </h2>
             <p className={styles.body}>
-              The internet forced organizations to think of themselves as a product customers experience — a website, a portal, a digital presence. Mobile compressed that experience into something simpler and always accessible. Both were transformations of the external interface: how customers see and interact with the organization.
+              The internet forced organizations to redesign themselves as digital organizations — websites, portals, digital products. Mobile forced another redesign: apps, mobile-first experiences, always-on accessibility. Both waves transformed the external interface. Each one added new teams and new structure layered on top of what already existed.
             </p>
             <p className={styles.body}>
-              AI is different. It transforms the internal operating model — what the organization actually is from the inside. The complex tangle of SaaS tools, manual processes, policy documents, and role handoffs that employees navigate every day gets redesigned into something fundamentally different: an operating system where agents hold roles and responsibilities, process and policy are built into the product, and people interface with the organization in a completely new way.
+              AI is different. It doesn&apos;t add a new channel or interface. It forces a redesign of how the organization operates — transforming the operating model into an operating system built to run a digital workforce alongside people. That means agents holding roles, process and policy made explicit and structured, and governance over how and when the digital workforce acts.
             </p>
             <p className={styles.body}>
-              When that internal transformation happens, the external experience improves continuously as a byproduct. The organization doesn&apos;t just deliver better — it becomes capable of continuously evolving what it delivers. That&apos;s the shift. Not AI as a tool added onto how you already work, but the organization itself redesigned around what AI makes possible.
+              Most organizations aren&apos;t ready for that — not because they lack ambition, but because the knowledge agents need to do their jobs has never been written down. It lives in people&apos;s heads, passed down through onboarding and coaching, filled in by judgment and experience. A new employee absorbs it over time. An agent cannot. Closing that gap is the real work of AI transformation.
             </p>
             <button className={styles.readMore} onClick={() => setModalOpen(true)}>
-              Why this shift is different →
+              The full picture →
             </button>
           </div>
 
