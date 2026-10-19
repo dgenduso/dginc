@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import CalendlyButton from "@/lib/components/calendly/CalendlyButton";
 import styles from "./HeroV3.module.css";
 
 export default function HeroV3() {
@@ -18,20 +17,26 @@ export default function HeroV3() {
     <section className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <p className={styles.eyebrow}>AI-Native Transformation</p>
+          <p className={styles.eyebrow}>
+            Organizational Innovation &amp; Transformation Consulting
+          </p>
           <h1 className={styles.headline}>
-            Helping organizations become AI-native.
+            Build an organization that learns, adapts, and delivers.
           </h1>
           <p className={styles.subheadline}>
-            That means redesigning how your organization operates across people,
-            process, policy, and product — so a digital workforce can operate
-            alongside humans, and the focus shifts to what only humans can do.
+            I help organizations transform how they understand customers,
+            identify opportunities, and deliver value—redesigning operating
+            models, strengthening innovation capabilities, and bringing people
+            and AI together to create better products, services, and customer
+            experiences.
           </p>
 
           <div className={styles.ctas}>
-            <CalendlyButton label="Let's Chat" className={styles.ctaPrimary} />
-            <a href="#offering" className={styles.ctaSecondary}>
-              See how I work →
+            <a href="#services" className={styles.ctaPrimary}>
+              Explore Services
+            </a>
+            <a href="#approach" className={styles.ctaSecondary}>
+              My Approach →
             </a>
           </div>
         </div>

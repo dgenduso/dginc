@@ -1,20 +1,29 @@
 import { GhostPost, formatDate } from "@/lib/ghost";
 import styles from "./ThoughtsGrid.module.css";
 
-export default function ThoughtsGrid({ posts }: { posts: GhostPost[] }) {
+interface ThoughtsGridProps {
+  posts: GhostPost[];
+  preview?: boolean;
+}
+
+export default function ThoughtsGrid({ posts, preview = false }: ThoughtsGridProps) {
+  const displayed = preview ? posts.slice(0, 3) : posts;
+
   return (
-    <section className={styles.section}>
+    <section className={`${styles.section} ${preview ? styles.sectionPreview : ""}`}>
       <div className={styles.inner}>
         <div className={styles.header}>
           <p className={styles.label}>Thoughts</p>
-          <h1 className={styles.heading}>The thinking behind my work.</h1>
+          <h2 className={preview ? styles.heading : styles.headingH1}>
+            {preview ? "Recent thinking." : "The thinking behind my work."}
+          </h2>
         </div>
 
-        {posts.length === 0 ? (
+        {displayed.length === 0 ? (
           <p className={styles.empty}>No posts yet. Check back soon.</p>
         ) : (
           <ul className={styles.list}>
-            {posts.map((post) => (
+            {displayed.map((post) => (
               <li key={post.id} className={styles.item}>
                 <a href={`/thoughts/${post.slug}`} className={styles.link}>
                   <div className={styles.linkMain}>
@@ -31,6 +40,10 @@ export default function ThoughtsGrid({ posts }: { posts: GhostPost[] }) {
               </li>
             ))}
           </ul>
+        )}
+
+        {preview && (
+          <a href="/thoughts" className={styles.viewAll}>All thoughts →</a>
         )}
       </div>
     </section>

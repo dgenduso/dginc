@@ -123,11 +123,11 @@ export interface TimelineEntry {
 export const timeline: TimelineEntry[] = [
   {
     period: "2023 — Present",
-    phase: "AI Builder",
+    phase: "AI System Builder",
     description:
-      "Building AI-native products and the operating system for building AI-native capabilities as products. APOLLO1 has evolved into the platform through which AI-native capabilities are designed, delivered, and operated. Applying everything from the previous phases — capability design, product engineering, operating model thinking — with AI as the new foundational layer. Also applying this directly to client organizations as a Fractional CAIO.",
+      "Building AI-native systems — not just AI-assisted tools, but systems where people and bots operate together as agents within intentionally designed processes, workflows, and policies. The system itself is the product: AI-native capabilities that include the agents (human and bot), the workflows that coordinate them, the policies that govern them, and the technology that enables them. APOLLO1 has evolved into the platform through which these systems are designed, delivered, and operated. Applying this directly to client organizations as a transformation partner.",
     learned:
-      "The bottleneck is no longer capability or headcount. It is clarity. With AI, the limiting factor is how well you understand the problem — not how many people you have to work on it. One person with agents and the right depth can lead transformation at a scale that previously required a large team.",
+      "An AI-native capability is not a feature — it is a system. It requires designing the agents (people and bots), the processes and workflows they operate within, the policies that govern their decisions, and the technology that connects them. Organizations that only add AI to existing roles and processes will always underperform organizations that redesign the system itself.",
   },
   {
     period: "2021 — 2023",

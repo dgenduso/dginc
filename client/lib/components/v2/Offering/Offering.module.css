@@ -104,7 +104,15 @@
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--v2-fg);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.phaseSubtitle {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--dim-policy);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .phaseBody {

@@ -1,75 +1,73 @@
 "use client";
 
-import { useState } from "react";
-import dynamic from "next/dynamic";
 import CalendlyButton from "@/lib/components/calendly/CalendlyButton";
 import styles from "./Offering.module.css";
 
-const InnovationCycleModal = dynamic(
-  () => import("@/lib/components/v2/InnovationCycleModal/InnovationCycleModal"),
-  { ssr: false }
-);
-
-const steps = [
+const services = [
   {
-    number: "01",
-    name: "Align",
-    body: "A structured multi-day workshop with leaders across your organization. We gather inputs on identity, values, current state, and vision — aligning everyone on what AI-native means for your org and what you're working toward. The output is the shared foundation we need to provision the operating system for your organization.",
-    cta: null,
+    name: "Operating Model Transformation",
+    subtitle: "Redesign how your organization works together to deliver value.",
+    body: "Design organizational structures, cross-functional teams, roles, responsibilities, workflows, and governance that align work around customer outcomes. Establish operating models that connect strategy, innovation, and execution across the organization.",
   },
   {
-    number: "02",
-    name: "Learn",
-    body: "We deploy the platform inside your organization with an initial set of forward-deployed agents. Those agents learn from your people through conversation — continuously, across functions and time zones, on their schedule. That learning feeds directly into the innovation process, surfacing what jobs need to be done, what gaps exist, and what to build next.",
-    cta: null,
+    name: "Customer Insights & Continuous Learning",
+    subtitle: "Build an organization that continuously learns from customers.",
+    body: "Strengthen customer discovery, conversational research, feedback systems, and organizational knowledge-sharing practices. Use AI to identify patterns, surface gaps in understanding, and guide ongoing learning that informs innovation and decisions.",
   },
   {
-    number: "03",
-    name: "Innovate",
-    body: "Learning surfaces signals. Signals kick off innovation cycles. Each cycle moves through the 5 Ds — adding a new Job to the system, closing a gap, or evolving an existing agent. Every delivery feeds back into learning, and the loop continues.",
-    cta: "See the innovation cycle →",
+    name: "Innovation Strategy & Portfolio Management",
+    subtitle: "Focus investment on the opportunities that create value.",
+    body: "Connect customer needs, business strategy, and organizational capabilities to opportunity identification, prioritization, portfolio planning, and investment decisions. Shift from disconnected initiatives toward coordinated, outcome-driven innovation.",
+  },
+  {
+    name: "Product, Service & Delivery Transformation",
+    subtitle: "Improve how your organization turns opportunities into outcomes.",
+    body: "Modernize discovery, design, experimentation, product development, service delivery, and deployment practices. Coordinate changes across people, processes, policies, and products so improvements reach customers as complete experiences.",
+  },
+  {
+    name: "AI-Native Work & Organizational Transformation",
+    subtitle: "Rethink how people and AI agents learn and work together.",
+    body: "Redesign activities, responsibilities, workflows, decision authority, and supporting technology to incorporate AI into how the organization operates. Go beyond automating existing tasks to create more effective and adaptable ways of working.",
+  },
+  {
+    name: "Leadership, Team & Innovation Coaching",
+    subtitle: "Develop the capabilities to sustain transformation.",
+    body: "Coach leaders and cross-functional teams in customer discovery, product and service innovation, experimentation, collaboration, continuous improvement, and AI-enabled ways of working. Make learning and capability development part of the work itself.",
   },
 ];
 
 export default function Offering() {
-  const [modalOpen, setModalOpen] = useState(false);
-
   return (
-    <>
-      <section id="offering" className={styles.section}>
-        <div className={styles.inner}>
-          <div className={styles.header}>
-            <p className={styles.label}>How an engagement works</p>
-            <h2 className={styles.heading}>Align. Learn. Innovate.</h2>
-            <p className={styles.subheading}>
-              Every engagement follows the same arc — align the organization, deploy the platform to learn from your people, then continuously innovate through a repeating cycle that builds and evolves the operating system over time.
-            </p>
-          </div>
-
-          <div className={styles.phases}>
-            {steps.map((step) => (
-              <div key={step.number} className={styles.phase}>
-                <div className={styles.phaseLeft}>
-                  <span className={styles.phaseNumber}>{step.number}</span>
-                </div>
-                <div className={styles.phaseRight}>
-                  <h3 className={styles.phaseName}>{step.name}</h3>
-                  <p className={styles.phaseBody}>{step.body}</p>
-                  {step.cta && (
-                    <button className={styles.readMore} onClick={() => setModalOpen(true)}>
-                      {step.cta}
-                    </button>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <CalendlyButton label="Let's Chat" className={styles.cta} />
+    <section id="services" className={styles.section}>
+      <div className={styles.inner}>
+        <div className={styles.header}>
+          <p className={styles.label}>Services</p>
+          <h2 className={styles.heading}>How I help organizations transform.</h2>
+          <p className={styles.subheading}>
+            I partner with organizations to design and implement the operating
+            models, innovation practices, and capabilities needed to continuously
+            improve products, services, customer experiences, and business
+            outcomes.
+          </p>
         </div>
-      </section>
 
-      {modalOpen && <InnovationCycleModal onClose={() => setModalOpen(false)} />}
-    </>
+        <div className={styles.phases}>
+          {services.map((service, i) => (
+            <div key={service.name} className={styles.phase}>
+              <div className={styles.phaseLeft}>
+                <span className={styles.phaseNumber}>0{i + 1}</span>
+              </div>
+              <div className={styles.phaseRight}>
+                <h3 className={styles.phaseName}>{service.name}</h3>
+                <p className={styles.phaseSubtitle}>{service.subtitle}</p>
+                <p className={styles.phaseBody}>{service.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <CalendlyButton label="Let's Talk" className={styles.cta} />
+      </div>
+    </section>
   );
 }

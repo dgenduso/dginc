@@ -5,10 +5,11 @@ import Logo from "@/lib/components/logo/Logo";
 import styles from "./Nav.module.css";
 
 const links = [
+  { label: "Services", href: "/#services" },
+  { label: "My Approach", href: "/#approach" },
   { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
   { label: "Thoughts", href: "/thoughts" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Nav() {
