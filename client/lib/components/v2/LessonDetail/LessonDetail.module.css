@@ -1,0 +1,180 @@
+.article {
+  min-height: 100svh;
+  padding: 9rem 1.5rem 7rem;
+  background: var(--v2-bg);
+}
+
+.inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.breadcrumbLink {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--v2-fg-muted);
+  transition: color 0.15s ease;
+}
+
+.breadcrumbLink:hover {
+  color: var(--v2-fg);
+}
+
+.breadcrumbSep {
+  font-size: 0.75rem;
+  color: var(--v2-fg-muted);
+  opacity: 0.5;
+}
+
+.header {
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--v2-border);
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--v2-fg-muted);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--v2-fg);
+  margin-bottom: 1rem;
+}
+
+.objective {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  color: var(--v2-fg-muted);
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--v2-fg-muted);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.transcriptLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--v2-fg-muted);
+  margin-bottom: 0.5rem;
+}
+
+.paragraph {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.8;
+  color: var(--v2-fg-muted);
+}
+
+.subLessons {
+  border-top: 1px solid var(--v2-border);
+  padding-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.subLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--v2-fg-muted);
+  margin-bottom: 1.5rem;
+}
+
+.subList {
+  list-style: none;
+  border-top: 1px solid var(--v2-border);
+}
+
+.subItem {
+  border-bottom: 1px solid var(--v2-border);
+}
+
+.subLink {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  color: var(--v2-fg-muted);
+  transition: color 0.15s ease;
+}
+
+.subLink:hover {
+  color: var(--v2-fg);
+}
+
+.subLinkMain {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.subTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--v2-fg);
+  transition: color 0.15s ease;
+}
+
+.subObjective {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--v2-fg-muted);
+}
+
+.subArrow {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  padding-top: 0.2rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.subLink:hover .subArrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.footer {
+  border-top: 1px solid var(--v2-border);
+  padding-top: 2rem;
+}
+
+.back {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--v2-fg-muted);
+  transition: color 0.15s ease;
+}
+
+.back:hover {
+  color: var(--v2-fg);
+}
