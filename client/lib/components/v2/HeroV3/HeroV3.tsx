@@ -47,7 +47,7 @@ export default function HeroV3() {
         >
           <div className={styles.photoRing}>
             <Image
-              src="/images/square-image.jpg"
+              src="/images/avatar-dg.png"
               alt="Dan Genduso"
               width={400}
               height={400}
