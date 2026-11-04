@@ -30,9 +30,9 @@ const services = [
     body: "Design the systems, structures, and governance through which humans and AI agents collaborate, make decisions, and improve over time. Move beyond automating existing work to building an organization that learns continuously — one where people and AI operate as a coherent, adaptive system.",
   },
   {
-    name: "Leadership, Team & Innovation Coaching",
-    subtitle: "Develop the capabilities to sustain transformation.",
-    body: "Coach leaders and cross-functional teams in customer discovery, product and service innovation, experimentation, collaboration, continuous improvement, and AI-enabled ways of working. Make learning and capability development part of the work itself.",
+    name: "Executive Advisory & Team Coaching",
+    subtitle: "Build the leadership and team capabilities to drive transformation.",
+    body: "Coach executives and cross-functional teams across the full range of transformation work — customer discovery, product and service innovation, AI-native ways of working, organizational design, and continuous improvement. Develop the capabilities to lead change, not just absorb it.",
   },
   {
     name: "AI Product Development",
