@@ -20,19 +20,24 @@ const services = [
     body: "Connect customer needs, business strategy, and organizational capabilities to opportunity identification, prioritization, portfolio planning, and investment decisions. Shift from disconnected initiatives toward coordinated, outcome-driven innovation.",
   },
   {
-    name: "Product, Service & Delivery Transformation",
-    subtitle: "Improve how your organization turns opportunities into outcomes.",
-    body: "Modernize discovery, design, experimentation, product development, service delivery, and deployment practices. Coordinate changes across people, processes, policies, and products so improvements reach customers as complete experiences.",
+    name: "Product & Service Innovation Capability",
+    subtitle: "Build the end-to-end capability to discover, deliver, and evolve.",
+    body: "Design and develop the practices, structures, and ways of working that connect customer discovery to product and service delivery — as one continuous capability. Move from disconnected projects and handoffs to an organization that can consistently turn insight into outcomes and improve what it offers over time.",
   },
   {
-    name: "AI-Native Work & Organizational Transformation",
-    subtitle: "Rethink how people and AI agents learn and work together.",
-    body: "Redesign activities, responsibilities, workflows, decision authority, and supporting technology to incorporate AI into how the organization operates. Go beyond automating existing tasks to create more effective and adaptable ways of working.",
+    name: "AI-Native Organizational Transformation",
+    subtitle: "Architect how people and AI agents learn and work together.",
+    body: "Design the systems, structures, and governance through which humans and AI agents collaborate, make decisions, and improve over time. Move beyond automating existing work to building an organization that learns continuously — one where people and AI operate as a coherent, adaptive system.",
   },
   {
     name: "Leadership, Team & Innovation Coaching",
     subtitle: "Develop the capabilities to sustain transformation.",
     body: "Coach leaders and cross-functional teams in customer discovery, product and service innovation, experimentation, collaboration, continuous improvement, and AI-enabled ways of working. Make learning and capability development part of the work itself.",
+  },
+  {
+    name: "AI Product Development",
+    subtitle: "Design and build AI-native products and capabilities.",
+    body: "Take ideas from definition through deployment — combining product thinking, modern AI tooling, and engineering execution. Build software that works at the speed of the problem: internal tools, customer-facing products, and AI capabilities that deliver real outcomes.",
   },
 ];
 
